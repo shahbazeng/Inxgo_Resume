@@ -185,7 +185,7 @@ ol {
     z-index: 99999;
     top: 0;
     left: 0;
-    background: #4834d4;
+    background: #f46327 !important;
     background: -webkit-linear-gradient(to right, #4834d4, #341f97);
     background: -webkit-linear-gradient(left, #4834d4, #341f97);
     background: linear-gradient(to right, #4834d4, #341f97);
@@ -687,7 +687,7 @@ ol {
     padding: 0 20px;
     min-width: 100px;
     color: #fff !important;
-    background: rgb(62, 148, 228);
+    background: rgb(235 96 47);
     height: 35px;
     border-radius: 5px;
     border: 1px solid #fff !important;
@@ -719,7 +719,7 @@ ol {
     color: #fff;
     box-shadow: 0 3ox 20px rgba(0, 0, 0, 0.1);
     border-radius: 7px;
-    background:rgb(62, 148, 228);
+    background:rgb(244 99 39);
     -webkit-transition: all 500ms;
     transition: all 500ms;
 }
@@ -729,7 +729,7 @@ ol {
     color: #fff;
 }
 .dream-btn.green-btn {
-    background:rgb(62, 148, 228)
+    background:rgb(244 99 39);
 }
 .more-btn.pink {
     background: #F69;
@@ -929,11 +929,11 @@ ol {
     opacity: .5;
 }
 .integration-link.light:before{
-    background: #e8f3fd;
+    background: #fdf5e8;
     opacity: 1;
 }
 .integration-link.light .integration-text{
-    color: #3e94e4;
+    color: #eb602f;
     font-weight: 600;
 }
 .integration-link.full:before{
@@ -1761,7 +1761,7 @@ p.artficial:before{
 }
 
 .services-block-four .inner-box h3 a{
-  color: #13287e;
+  color: #222529;
   transition:all 0.3s ease;
   -moz-transition:all 0.3s ease;
   -webkit-transition:all 0.3s ease;
@@ -4228,7 +4228,7 @@ body.light-version {
 .light-version input:valid ~ label,
 .light-version textarea:valid ~ label,
 .light-version .copywrite_text > p > a {
-    color: #13287e ;
+    color: #4a210f ;
 }
 
 .light-version .dream-faq-area dt {
@@ -4398,7 +4398,7 @@ body.light-version {
     }
 }
 .btn{
-    border: 2px solid #007bff
+    border: 2px solid #f46327;
 }
 
 label{

@@ -97,7 +97,7 @@
                         <h1 class="wow fadeInUp" data-wow-delay="0.2s">Online CV Builder With Creative Templates.</h1>
                         <p class="lead">Use professional field-tested resume templates that follow the exact <br> ‘resume rules’ employers look for. Easy to use and done within <br> minutes - try now for free! </p>
             
-                        <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s"> <a href="{{ route('home')}}" class="btn dream-btn green-btn"> Create My Resume</a> <a href="#" class="btn dream-btn green-btn mr-3">Choose Template</a> </div>
+                        <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s"> <a href="{{ route('home')}}" class="btn dream-btn green-btn mr-3">Get Started</a>  <a href="{{ route('home')}}" class="btn dream-btn green-btn" style="background: #212529;border:2px solid #212529;"> Create My Resume</a></div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-12">
@@ -429,9 +429,9 @@
                     <div class="col-12 col-lg-4 col-md-6">
                         <div class="footer-copywrite-info">
                             <!-- Copywrite -->
-                            <div class="copywrite_text fadeInUp" data-wow-delay="0.2s">
+                            <div class="copywrite_text fadeInUp" data-wow-delay="0.2s"> 
                                 <div class="footer-logo">
-                                    <a href="#"><img src="{{ asset('img/core-img/logo.png') }}"alt="logo"> CV Builder </a>
+                                    <a href="#"><img src="img/core-img/logo.png" alt="logo"> </a>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus voluptatibus neque illo id repellat quisquam? Autem expedita earum quae laborum ipsum ad.</p>
                             </div>

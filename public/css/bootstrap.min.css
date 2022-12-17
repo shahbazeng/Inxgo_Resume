@@ -177,7 +177,7 @@ sup {
 }
 
 a {
-    color: #007bff;
+    color: #f46327;
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects
@@ -4051,6 +4051,7 @@ input[type=submit].btn-block {
 .nav-link {
     display: block;
     padding: .5rem 1rem
+ 
 }
 
 .nav-link:focus,
