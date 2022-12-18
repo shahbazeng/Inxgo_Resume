@@ -92,7 +92,7 @@
                         <div class="promo-section">
                             <div class="integration-link light"> <span class="integration-icon">
                                     <img src="{{ asset('img/svg/img-dollar.svg') }}" width="24" height="24" alt="">
-                                </span> <span class="integration-text">Discover The Easiest ways to Build Your CV!</span> </div>
+                                </span> <span class="integration-text">Build Your Resume 100 % Free!</span> </div>
                         </div>
                         <h1 class="wow fadeInUp" data-wow-delay="0.2s">Online CV Builder With Creative Templates.</h1>
                         <p class="lead">Use professional field-tested resume templates that follow the exact <br> ‘resume rules’ employers look for. Easy to use and done within <br> minutes - try now for free! </p>

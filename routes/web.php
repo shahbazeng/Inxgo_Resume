@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\GoogleController;
+use Laravel\Socialite\Facades\Socialite;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -64,3 +65,5 @@ Route::post('/ca_update/{id}','CareerObjectController@update')->name('update');
 Route::get('pdf_display','PdfController@index')->name('pdf_index');
 Route::get('pdf_download','PdfController@download')->name('download');
 
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
+Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
