@@ -87,7 +87,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <!-- Welcome Content -->
-                <div class="col-12 col-lg-6 col-md-12">
+                <div class="col-12 col-lg-6 col-md-12"> 
                     <div class="welcome-content v2">
                         <div class="promo-section">
                             <div class="integration-link light"> <span class="integration-icon">

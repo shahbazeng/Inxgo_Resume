@@ -41,16 +41,19 @@ return view('home');
     public function store(Request $request)
     {
         $request->validate([
-            'first_name' => ['required', 'max:255','string'],
-            'last_name' => ['required', 'max:255'],
-            'profession' => ['required', 'max:255'],
-            'division' => ['required', 'max:255'],
-            'address' => ['required', 'max:255'],
-            'website' => ['required', 'URL'],
-            'post_code' => ['required', 'integer'],
-            'phone' => ['required', 'integer'],
-            'email' => ['required','email','unique:basic_information'],
-        ],[
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|max:255',
+            'profession' => 'required|max:255',
+            'division' => 'required|max:255',
+            'address' => 'required|max:255',
+            'website' => 'nullable|URL',
+            'post_code' => 'required|integer',
+            'phone' => 'required|integer',
+            'email' => 'required|email|unique:basic_information',
+        ],
+
+
+        [
             'first_name.required' =>"Field Must not be empty",
             'first_name.string' =>"Name Should be a String",
             'last_name.required' =>"Field Must not be empty",

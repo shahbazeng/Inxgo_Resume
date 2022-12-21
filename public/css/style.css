@@ -3131,6 +3131,9 @@ p.artficial:before{
 .subscribe .buy-tokens i{
     margin-right: 10px
 }
+.dropdown-backdrop{
+    position: static;
+}
 .subscribe .dream-btn{
     position: absolute;
     top: -2px;
