@@ -21,7 +21,7 @@ class CreateBasicInfosTable extends Migration
             $table->string('profession');
             $table->string('email')->unique();
             $table->string('phone',18);
-            $table->string('website')->nullable()->change();
+            $table->string('website')->nullable();
             $table->string('address');
             $table->integer('post_code');
             $table->string('division');
