@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\basicInfo;
+use App\User;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 class BasicInfoController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -29,7 +31,7 @@ class BasicInfoController extends Controller
      */
     public function create()
     {
-return view('home');
+        return view('home');
     }
 
     /**
@@ -46,9 +48,9 @@ return view('home');
             'profession' => 'required|max:255',
             'division' => 'required|max:255',
             'address' => 'required|max:255',
-            'website' => 'nullable|URL',
+            // 'website' => 'nullable|URL',
             'post_code' => 'required|integer',
-            'phone' => 'required|integer',
+            // 'phone' => 'required|integer',
             'email' => 'required|email|unique:basic_information',
         ],
 
@@ -81,7 +83,17 @@ return view('home');
         $bInfo->post_code = $request->post_code;
         $bInfo->phone = $request->phone;
         $bInfo->email = $request->email;
-        $bInfo->user_id = Auth::user()->id;
+        $user=User::where('email',$request->email)->first();
+        if(!$user)
+        {  
+            $user=User::create([
+                'name' => $request->first_name .' '.$request->last_name,
+                'email' =>  $request->email,
+                'password' => Hash::make(123),
+            ]);
+        }
+        Auth::login($user, true);
+        $bInfo->user_id = isset(Auth::user()->id)?Auth::user()->id:null;
         if($bInfo->save()){
             return redirect('education_information');
         }else{

@@ -15,7 +15,7 @@ class CreateBasicInfosTable extends Migration
     {
         Schema::create('basic_information', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id');
+            $table->foreignId('user_id')->nullable();
             $table->string('first_name');
             $table->string('last_name');
             $table->string('profession');
