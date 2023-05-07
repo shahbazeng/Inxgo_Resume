@@ -15,7 +15,7 @@ use Laravel\Socialite\Facades\Socialite;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('landing_page');
 })->name('main_index');
 
 //Route::resource('user','UserController');
