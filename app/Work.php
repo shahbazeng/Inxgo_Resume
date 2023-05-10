@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Work extends Model
 {
      protected $fillable = [
-        'user_id', 'company_name', 'position','year',
+        'user_id', 'company_name', 'position','year','year_end','about'
     ];
 }

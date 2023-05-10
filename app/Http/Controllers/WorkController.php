@@ -47,17 +47,22 @@ class WorkController extends Controller
             'company_name' => ['required', 'max:255','string'],
             'position' => ['required', 'max:255'],
             'year' => ['required', 'integer'],
+            'year_end' => ['required', 'integer'],
         ],[
             'company_name.required' =>"Field Must not be empty",
             'position.string' =>"Name Should be a String",
             'year.required' =>"Field Must not be empty",
             'year.integer' =>"Enter valid Year!",
+            'year_end.required' =>"Field Must not be empty",
+            'year_end.integer' =>"Enter valid Year!",
         ]);
         $work = new Work;
 
         $work->company_name = $request->company_name;
         $work->position = $request->position;
         $work->year = $request->year;
+        $work->year_end = $request->year_end;
+        $work->about = $request->about;
         $work->user_id = Auth::user()->id;
         if($work->save()){
             return redirect('work_summery_display');
@@ -104,16 +109,21 @@ class WorkController extends Controller
             'company_name' => ['required', 'max:255','string'],
             'position' => ['required', 'max:255'],
             'year' => ['required', 'integer'],
+            'year_end' => ['required', 'integer'],
         ],[
             'company_name.required' =>"Field Must not be empty",
             'position.string' =>"Name Should be a String",
             'year.required' =>"Field Must not be empty",
             'year.integer' =>"Enter valid Year!",
+            'year_end.required' =>"Field Must not be empty",
+            'year_end.integer' =>"Enter valid Year!",
         ]);
         $update = Work::findorFail($id)->update([
             'company_name' => $request->company_name,
             'position' => $request->position,
             'year' => $request->year,
+            'year_end' => $request->year_end,
+            'about' => $request->about,
         ]);
         if($update)
         {

@@ -13,21 +13,21 @@
                         @csrf
                         <div class="form-group">
                             <div class="row no-gutters">
-                                <div class="col-md-5">
+                                <div class="col-md-3">
                                     <label for="">Certificate Name : </label>
                                     <input type="text" class="form-control @error('certificate_name') is-invalid @enderror" name="certificate_name" placeholder="Enter Certificate Name" value="{{ old('certificate_name') }}">
                                     @error('certificate_name')
                                     <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="col-md-5">
+                                <div class="col-md-3">
                                     <label for="">About : </label>
                                     <input type="text" class="form-control @error('about') is-invalid @enderror" name="about" placeholder="About Certificate " value="{{ old('about') }}">
                                     @error('about')
                                     <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-3">
                                     <label for="">Certification Year : </label>
                                     <input type="text" class="form-control @error('year') is-invalid @enderror" name="year" placeholder="Certification Year" value="{{ old('year') }}">
                                     @error('year')

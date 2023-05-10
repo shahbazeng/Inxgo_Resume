@@ -47,7 +47,7 @@
                 <!-- Classy Menu -->
                 <nav class="classy-navbar justify-content-between" id="dreamNav">
                     <!-- Logo -->
-                    <a class="nav-brand" href="{{ url('/') }}"><img src="img/core-img/logo.png" alt="logo"></a>
+                    <a class="nav-brand" href="{{ url('/') }}"><img src="{{ url('img/core-img/logo.png') }}" alt="logo"></a>
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler"> <span class="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
@@ -60,7 +60,7 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul id="nav">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="{{ url('/') }}">Home</a></li>
                                 <!--<li><a href="about-us.html">About Us</a></li>
                                 <li><a href="pricing.html">Pricing</a></li>
                                 <li><a href="templates.html">Templates</a></li>

@@ -48,17 +48,22 @@ class EducationController extends Controller
             'degree' => ['required', 'max:255','string'],
             'institute' => ['required', 'max:255'],
             'year' => ['required', 'integer'],
+            'year_end' => ['required', 'integer'],
         ],[
             'degree.required' =>"Field Must not be empty",
             'institute.string' =>"Name Should be a String",
             'year.required' =>"Field Must not be empty",
             'year.integer' =>"Enter valid Year!",
+            'year_end.required' =>"Field Must not be empty",
+            'year_end.integer' =>"Enter valid Year!",
         ]);
         $edu = new Education;
 
         $edu->degree = $request->degree;
         $edu->institute = $request->institute;
         $edu->year = $request->year;
+        $edu->year_end = $request->year_end;
+        $edu->about = $request->about;
         $edu->user_id = Auth::user()->id;
         if($edu->save()){
             return redirect('education_summery');
@@ -95,16 +100,21 @@ class EducationController extends Controller
             'degree' => ['required', 'max:255','string'],
             'institute' => ['required', 'max:255'],
             'year' => ['required', 'integer'],
+            'year_end' => ['required', 'integer'],
         ],[
             'degree.required' =>"Field Must not be empty",
             'institute.string' =>"Name Should be a String",
             'year.required' =>"Field Must not be empty",
             'year.integer' =>"Enter valid Year!",
+            'year_end.required' =>"Field Must not be empty",
+            'year_end.integer' =>"Enter valid Year!",
         ]);
         $update = Education::findorFail($id)->update([
             'degree' => $request->degree,
             'institute' => $request->institute,
             'year' => $request->year,
+            'year_end' => $request->year_end,
+            'about' => $request->about,
         ]);
         if($update)
         {

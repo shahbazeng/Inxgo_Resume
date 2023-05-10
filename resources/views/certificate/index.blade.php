@@ -42,7 +42,7 @@
                             @endforeach
                             <tr>
                                 <td colspan="5">
-                                    <a href="{{route('ca_create')}}" class="btn btn-block btn-success">Continue Next</a>
+                                    <a href="{{route('ex_create')}}" class="btn btn-block btn-success">Continue Next</a>
                                 </td>
                             </tr>
                             <tr>

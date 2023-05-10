@@ -13,24 +13,38 @@
                         @csrf
                         <div class="form-group">
                             <div class="row no-gutters">
-                                <div class="col-md-5">
+                                <div class="col-md-3">
                                     <label for="">Company Name : </label>
                                     <input type="text" class="form-control @error('company_name') is-invalid @enderror" name="company_name" placeholder="Enter Company Name" value="{{ $data->company_name }}">
                                     @error('company_name')
                                     <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="col-md-5">
+                                <div class="col-md-3">
                                     <label for="">Position : </label>
                                     <input type="text" class="form-control @error('position') is-invalid @enderror" name="position" placeholder="Enter Position " value="{{ $data->position }}">
                                     @error('position')
                                     <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="col-md-2">
-                                    <label for="">Work Year : </label>
-                                    <input type="text" class="form-control @error('year') is-invalid @enderror" name="year" placeholder="Work Year" value="{{ $data->year}}">
+                                <div class="col-md-3">
+                                    <label for="">Year start : </label>
+                                    <input type="text" class="form-control @error('year') is-invalid @enderror" name="year" placeholder="Work Year" value="{{ $data->year  }}">
                                     @error('year')
+                                    <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                 <div class="col-md-3">
+                                    <label for="">Year End : </label>
+                                    <input type="text" class="form-control @error('year_end') is-invalid @enderror" name="year_end" placeholder="Graduate Year" value="{{ $data->year_end }}">
+                                    @error('year_end')
+                                    <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="">About : </label>
+                                    <textarea name="about" id="" cols="30" rows="5"  class="form-control @error('about') is-invalid @enderror" value="{{ $data->about}}">{{ $data->about}}</textarea>
+                                    @error('about')
                                     <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>

@@ -14,6 +14,7 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
+
 Route::get('/', function () {
     return view('landing_page');
 })->name('main_index');
@@ -38,6 +39,13 @@ Route::get('/edu_delete/{id}','EducationController@destroy')->name('edu_delete')
 Route::get('/update/{id}','EducationController@edit')->name('update');
 Route::post('/update/{id}','EducationController@update')->name('update');
 
+//references 
+Route::get('references_summery_display','ReferencesController@index')->name('references_index');
+Route::get('references_information_create','ReferencesController@create')->name('references_create');
+Route::post('references_information_store','ReferencesController@store')->name('references_store');
+Route::get('/references_delete/{id}','ReferencesController@destroy')->name('references_delete');
+Route::get('/references_update/{id}','ReferencesController@edit')->name('edit');
+Route::post('/references_update/{id}','ReferencesController@update')->name('update');
 //work 
 Route::get('work_summery_display','WorkController@index')->name('work_index');
 Route::get('work_information_create','WorkController@create')->name('work_create');
@@ -54,6 +62,21 @@ Route::get('/delete/{id}','CertificateController@destroy')->name('delete');
 Route::get('/certificate_update/{id}','CertificateController@edit')->name('edit');
 Route::post('/certificate_update/{id}','CertificateController@update')->name('update');
 
+//skill
+Route::get('skills_summery_display','SkillController@index')->name('skills_index');
+Route::get('skills_information_create','SkillController@create')->name('skills_create');
+Route::post('skills_information_store','SkillController@store')->name('skills_store');
+Route::get('/delete/{id}','SkillController@destroy')->name('delete');
+Route::get('/skills_update/{id}','SkillController@edit')->name('edit');
+Route::post('/skills_update/{id}','SkillController@update')->name('skills_update');
+//Expertise
+Route::get('ex_summery_display','ExpertController@index')->name('ex_index');
+Route::get('ex_information_create','ExpertController@create')->name('ex_create');
+Route::post('ex_information_store','ExpertController@store')->name('ex_store');
+Route::get('/delete/{id}','ExpertController@destroy')->name('delete');
+Route::get('/ex_update/{id}','ExpertController@edit')->name('edit');
+Route::post('/ex_update/{id}','ExpertController@update')->name('ex_update');
+
 //CA
 Route::get('ca_summery_display','CareerObjectController@index')->name('ca_index');
 Route::get('ca_information_create','CareerObjectController@create')->name('ca_create');
@@ -63,7 +86,19 @@ Route::post('/ca_update/{id}','CareerObjectController@update')->name('update');
 
 //PDF
 Route::get('pdf_display','PdfController@index')->name('pdf_index');
+Route::get('pdf_display2','PdfController@index2')->name('pdf_index2');
+Route::get('pdf_display3','PdfController@index3')->name('pdf_index3');
 Route::get('pdf_download','PdfController@download')->name('download');
 
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
+
+Route::get('migrate', function () {
+     \Artisan::call('migrate');
+    \Artisan::call('db:seed');
+    dd("migrate run");
+
+});
+Route::get('cache', function () {
+ \Artisan::call('cache:clear');
+});

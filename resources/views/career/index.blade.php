@@ -30,7 +30,17 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="{{url('pdf_display')}}" class="btn btn-primary btn-block">Preview Your Resume</a>
+                                    <a href="{{url('pdf_display')}}" class="btn btn-primary btn-block">Preview Your Resume 1</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="{{url('pdf_display2')}}" class="btn btn-primary btn-block">Preview Your Resume 2</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="{{url('pdf_display3')}}" class="btn btn-primary btn-block">Preview Your Resume 3</a>
                                 </td>
                             </tr>
                         </tbody>

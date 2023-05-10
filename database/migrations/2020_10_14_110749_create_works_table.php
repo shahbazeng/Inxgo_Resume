@@ -19,6 +19,8 @@ class CreateWorksTable extends Migration
             $table->string('company_name');
             $table->string('position');
             $table->integer('year');
+            $table->integer('year_end')->nullable();
+            $table->text('about')->nullable();
             $table->timestamps();
         });
     }
