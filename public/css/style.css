@@ -722,6 +722,7 @@ ol {
     background:rgb(244 99 39);
     -webkit-transition: all 500ms;
     transition: all 500ms;
+    margin-top:5px;
 }
 
 .dream-btn:hover {
@@ -897,7 +898,7 @@ ol {
 .welcome-content {
     position: relative;
     z-index: 1;
-    margin-top: 90px;
+    margin-top: 5px;
 }
 
 .promo-section {
@@ -909,7 +910,7 @@ ol {
     vertical-align: top;
     position: relative;
     letter-spacing: .58px;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 24px;
     color: #d5d5ea
 }
@@ -1241,7 +1242,7 @@ ol {
     margin-bottom: 20px;
 }
 .welcome-content h1 {
-    font-size: 45px;
+    font-size: 41px;
     font-weight: 600;
     margin-bottom: 20px;
 }

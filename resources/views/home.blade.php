@@ -14,7 +14,7 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="">Frist Name : </label>
+                                    <label for="">First Name : </label>
                                     <input type="text" class="form-control @error('first_name') is-invalid @enderror" name="first_name" placeholder="Enter First Name" value="{{ old('first_name') }}">
                                     @error('first_name')
                                     <span class="text-danger">{{ $message }}</span>
@@ -74,6 +74,13 @@
                                     <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
+                                 <div class="col-md-3">
+                                    <label for="">City : </label>
+                                    <input type="text" class="form-control @error('division') is-invalid @enderror" name="division" placeholder="Enter Your Division" value ="{{old('division')}}">
+                                    @error('division')
+                                    <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
                                 <div class="col-md-3">
                                     <label for="">Post Code : </label>
                                     <input type="text" class="form-control @error('post_code') is-invalid @enderror" name="post_code" placeholder="Enter Your Post Code" value ="{{old('post_code')}}">
@@ -81,13 +88,7 @@
                                     <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="col-md-3">
-                                    <label for="">Division : </label>
-                                    <input type="text" class="form-control @error('division') is-invalid @enderror" name="division" placeholder="Enter Your Division" value ="{{old('division')}}">
-                                    @error('division')
-                                    <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="form-group">

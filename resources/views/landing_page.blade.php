@@ -92,12 +92,12 @@
                         <div class="promo-section">
                             <div class="integration-link light"> <span class="integration-icon">
                                     <img src="{{ asset('img/svg/img-dollar.svg') }}" width="24" height="24" alt="">
-                                </span> <span class="integration-text">Build Your Resume 100 % Free!</span> </div>
+                                </span> <span class="integration-text">Build, download, or share Your CV | Resume 100 % Free!</span> </div>
                         </div>
-                        <h1 class="wow fadeInUp" data-wow-delay="0.2s">Online CV Builder With Creative Templates.</h1>
+                        <h1 class="wow fadeInUp" data-wow-delay="0.2s">Online Resume Builder With Creative Templates.</h1>
                         <p class="lead">Use professional field-tested resume templates that follow the exact <br> ‘resume rules’ employers look for. Easy to use and done within <br> minutes - try now for free! </p>
             
-                        <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s"> <a href="{{ route('home')}}" class="btn dream-btn green-btn mr-3">Get Started</a>  <a href="{{ route('home')}}" class="btn dream-btn green-btn" style="background: #212529;border:2px solid #212529;"> Create My Resume</a></div>
+                        <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s"> <a href="{{ route('home')}}" class="btn dream-btn green-btn mr-3">Get started for free </a>  <a href="{{ route('home')}}" class="btn dream-btn green-btn" style="background: #212529;border:2px solid #212529;"> No I like to waste money and pay <b style="font-size:17px;">😆</b></a></div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-12">
@@ -141,6 +141,35 @@
                         <h4>Why Choose Our Platform?</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tempora odit laborum iure inventore possimus laboriosam qui nam. Fugit!</p> <a class="btn dream-btn mt-30" href="templates.html">lets build your cv</a> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <section class="demo section-padding-100 ring-bg">
+        <div class="container">
+            <div class="section-heading text-center">
+                <div class="dream-dots justify-content-center"> <span></span><span></span><span></span><span></span><span></span><span></span><span></span> </div>
+                <h2 class="bold">Our Creative Templates</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="demo-item">
+                        <a href="template-preview.html"><img src="{{ asset('img/demos/demo-1.png') }}" alt="demo" class="img-responsive"></a>
+                        <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="demo-item">
+                        <a href="template-preview.html"><img src="{{ asset('img/demos/demo-2.png') }}" alt="demo" class="img-responsive"></a>
+                        <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="demo-item">
+                        <a href="template-preview.html"><img src="{{ asset('img/demos/demo-3.png') }}" alt="demo" class="img-responsive"></a>
+                        <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -208,77 +237,8 @@
         </div>
     </section>
     <!-- ##### Area End ##### -->
-    <section class="pricing section-padding-0-70">
-        <div class="container">
-            <div class="row">
-                <!-- Single Table -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="who-we-contant mt-s">
-                        <div class="dream-dots"> <span></span><span></span><span></span><span></span><span></span><span></span><span></span> </div>
-                        <h4>Our Pricing</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
-                        <div class="free-7"> <span>Lets Build CV</span>
-                            <p> with 7days of Free Trial</p>
-                        </div>
-                        <div class="terms mt-30"> <a href="#">Terms & Conditions </a>
-                            <p>subject to change with perior notice</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Table -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_price_table_content wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="price_table_text">
-                            <h1>$9.99</h1>
-                            <h5 class="gradient-text cyan">/ month</h5> </div>
-                        <div class="table_text_details">
-                            <h3>Monthly Pack</h3>
-                            <p>You will be billed per month, and get unlimited access to all resume Templates and new added ones</p> <a href="contact-us.html" class="button mt-s">Get Started</a> </div>
-                    </div>
-                </div>
-                <!-- Single Table -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_price_table_content wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="price_table_text">
-                            <h1>$7.99</h1>
-                            <h5 class="gradient-text cyan">/ month</h5> </div>
-                        <div class="table_text_details">
-                            <h3>Yearly Pack <span> save 20%</span></h3>
-                            <p>You will be billed per Year, and get unlimited access to all resume Templates and new added ones</p> <a href="contact-us.html" class="button mt-s">Get Started</a> </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="demo section-padding-100 ring-bg">
-        <div class="container">
-            <div class="section-heading text-center">
-                <div class="dream-dots justify-content-center"> <span></span><span></span><span></span><span></span><span></span><span></span><span></span> </div>
-                <h2 class="bold">Our Creative Templates</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="demo-item">
-                        <a href="template-preview.html"><img src="{{ asset('img/demos/demo-1.png') }}" alt="demo" class="img-responsive"></a>
-                        <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="demo-item">
-                        <a href="template-preview.html"><img src="{{ asset('img/demos/demo-2.png') }}" alt="demo" class="img-responsive"></a>
-                        <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="demo-item">
-                        <a href="template-preview.html"><img src="{{ asset('img/demos/demo-3.png') }}" alt="demo" class="img-responsive"></a>
-                        <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+ 
+  
     <!-- ##### Our features Area Start ##### -->
     <section class="our_services_area section-padding-100-70" id="services">
         <div class="container">
