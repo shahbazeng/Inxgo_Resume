@@ -29,6 +29,9 @@ Route::get('test',function(){
 });
 //Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home', 'BasicInfoController@create')->name('home');
+Route::get('/resumes', 'HomeController@allresume')->name('resumes');
+Route::get('/about', 'HomeController@aboutus')->name('about');
+Route::get('/contact', 'HomeController@inxgocontact')->name('contact us');
 Route::post('/basic info store', 'BasicInfoController@store')->name('store');
 
 //education

@@ -91,7 +91,7 @@
                     <div class="welcome-content v2">
                         <div class="promo-section">
                             <div class="integration-link light"> <span class="integration-icon">
-                                    <img src="{{ asset('img/svg/img-dollar.svg') }}" width="24" height="24" alt="">
+                                    <img src="{{ asset('img/svg/img-dollar.svg') }}" width="24" height="24" alt="inxgo cv resume builder">
                                 </span> <span class="integration-text">Build, download, or share Your CV | Resume 100 % Free!</span> </div>
                         </div>
                         <h1 class="wow fadeInUp" data-wow-delay="0.2s">Online Resume Builder With Creative Templates.</h1>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-12">
-                    <div class="banner-box"> <img src="{{ asset('img/core-img/banner2.png') }}" alt=""> </div>
+                    <div class="banner-box"> <img src="{{ asset('img/core-img/banner2.png') }}" alt="inxgo cv resume builder"> </div>
                 </div>
             </div>
         </div>
@@ -117,21 +117,21 @@
                         <div class="inner-box">
                             <div class="icon-img-box"> <img src="{{ asset('img/icons/d1.png') }}" alt=""> </div>
                             <h3><a href="#">Easy Online Resume Builder</a></h3>
-                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi assumenda.</div>
+                            <div class="text">With our simple web builder, you can easily create a professional resume.</div>
                         </div>
                     </div>
                     <div class="services-block-four">
                         <div class="inner-box">
                             <div class="icon-img-box"> <img src="{{ asset('img/icons/d2.png') }}" alt=""> </div>
                             <h3><a href="#">Step by Step Expert Tips</a></h3>
-                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit skaj gjska consectetur adipisicing elit.</div>
+                            <div class="text">With inxgo detailed online resume creator and step-by-step expert suggestions, you can maximise your career potential.</div>
                         </div>
                     </div>
                     <div class="services-block-four" style="margin-bottom:0">
                         <div class="inner-box">
                             <div class="icon-img-box"> <img src="{{ asset('img/icons/d3.png') }}" alt=""> </div>
                             <h3><a href="#">Recruiter Approved Phrases</a></h3>
-                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi.</div>
+                            <div class="text">With our list of resume phrases that the industry has authorised, you'll dazzle hiring managers.</div>
                         </div>
                     </div>
                 </div>
@@ -139,8 +139,9 @@
                     <div class="who-we-contant mt-s">
                         <div class="dream-dots"> <span></span><span></span><span></span><span></span><span></span><span></span><span></span> </div>
                         <h4>Why Choose Our Platform?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tempora odit laborum iure inventore possimus laboriosam qui nam. Fugit!</p> <a class="btn dream-btn mt-30" href="templates.html">lets build your cv</a> </div>
+                        <p>Why should you select our platform when creating your resume? We provide a wide range of benefits. You may easily construct a standout professional resume using our user-friendly design.
+</p>
+                        <p> Our website offers editable templates, professional advice, and immediate feedback to make sure your resume is recruiter-ready. You can rely on us for a smooth and effective job application procedure.</p> <a class="btn dream-btn mt-30" href="templates.html">lets build your cv</a> </div>
                 </div>
             </div>
         </div>
@@ -150,29 +151,32 @@
             <div class="section-heading text-center">
                 <div class="dream-dots justify-content-center"> <span></span><span></span><span></span><span></span><span></span><span></span><span></span> </div>
                 <h2 class="bold">Our Creative Templates</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <p>With our extensive selection of fashionable and expert templates for a standout resume, unleash your creativity.</p>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="demo-item">
-                        <a href="template-preview.html"><img src="{{ asset('img/demos/demo-1.png') }}" alt="demo" class="img-responsive"></a>
-                        <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
-                    </div>
+
+                   
+                        <a href="{{ route('resumes') }}"><img src="{{ asset('img/demos/demo-1.png') }}" alt="demo" class="img-responsive"></a>
+                     <!--   <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div> -->
+                   
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="demo-item">
-                        <a href="template-preview.html"><img src="{{ asset('img/demos/demo-2.png') }}" alt="demo" class="img-responsive"></a>
-                        <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
+                    
+                        <a href="{{ route('resumes') }}"><img src="{{ asset('img/demos/demo-2.png') }}" alt="demo" class="img-responsive"></a>
+                       <!--   <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div> -->
                     </div>
-                </div>
+               
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="demo-item">
-                        <a href="template-preview.html"><img src="{{ asset('img/demos/demo-3.png') }}" alt="demo" class="img-responsive"></a>
-                        <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
-                    </div>
+                    
+                        <a href="{{ route('resumes') }}"><img src="{{ asset('img/demos/demo-3.png') }}" alt="demo" class="img-responsive"></a>
+                        <!--   <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div> --> 
+
+                 
                 </div>
+
             </div>
-        </div>
+     
     </section>
     <!-- ##### About Us Area Start ##### -->
     <section class="about-us-area section-padding-100 clearfix">
@@ -186,7 +190,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="side-feature-list-item"> <img src="img/icons/check.png" class="check-mark-icon" alt="">
-                                        <div class="foot-c-info">Proven CV Templates to increase Hiring Chance</div>
+                                        <div class="foot-c-info">Proven CV Templates to Improve the Chance of Being Hired</div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -196,22 +200,22 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="side-feature-list-item"> <img src="{{ asset('img/icons/check.png') }}" class="check-mark-icon" alt="">
-                                        <div class="foot-c-info">Easy and Intuitive Online CV Builder</div>
+                                        <div class="foot-c-info">Clean, Easy and Ingenious Template Design</div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="side-feature-list-item"> <img src="{{ asset('img/icons/check.png') }}" class="check-mark-icon" alt="">
-                                        <div class="foot-c-info">Free to use. Developed by hiring professionals.</div>
+                                <div class="foot-c-info">Use is free. developed by employing experts</div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="side-feature-list-item"> <img src="{{ asset('img/icons/check.png') }}" class="check-mark-icon" alt="">
-                                        <div class="foot-c-info">Fast Easy CV and Resume Formatting</div>
+                                        <div class="foot-c-info">Quick and Simple Resume and CV Formatting</div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="side-feature-list-item"> <img src="{{ asset('img/icons/check.png') }}" class="check-mark-icon" alt="">
-                                        <div class="foot-c-info">Recruiter Approved Phrases.</div>
+                                        <div class="foot-c-info">Phrases Used By Recruiters</div>
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +223,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="welcome-meter wow fadeInUp mt-s" data-wow-delay="0.3s"> <img src="{{ asset('img/core-img/cv.png') }}" class="center-block" alt=""> </div>
+                    <div class="welcome-meter wow fadeInUp mt-s" data-wow-delay="0.3s"> <img src="{{ asset('img/core-img/cv.png') }}" class="center-block" alt="inxgo cv resume builder templates"> </div>
                 </div>
             </div>
         </div>
@@ -246,7 +250,7 @@
                 <!-- Dream Dots -->
                 <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s"> <span></span><span></span><span></span><span></span><span></span><span></span><span></span> </div>
                 <h2 class="wow fadeInUp" data-wow-delay="0.3s">Our Main Features</h2>
-                <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">Learn more about our key features, which include scalable templates, real-time editing, professional advice, and seamless integration.</p>
             </div>
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -255,7 +259,7 @@
                         <!-- Icon -->
                         <div class="service_icon"> <img src="{{ asset('img/icons/f1.png') }}" alt=""> </div>
                         <h6>Proven CV Templates to increase Hiring Chance</h6>
-                        <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.</p>
+                        <p>Utilise our tried-and-true CV templates, which have a successful track record in the job market, to increase your chances of being recruited.</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -264,7 +268,7 @@
                         <!-- Icon -->
                         <div class="service_icon"> <img src="{{ asset('img/icons/f2.png') }}" alt=""> </div>
                         <h6>Creative, Modern and Clean Templates Design</h6>
-                        <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.</p>
+                        <p>inxgo have outstanding collection of templates, you may experience the ideal fusion of originality, contemporary aesthetics, and clean style.</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -273,7 +277,7 @@
                         <!-- Icon -->
                         <div class="service_icon"> <img src="{{ asset('img/icons/f3.png') }}" alt=""> </div>
                         <h6>Easy and Intuitive Online CV and Resume Builder </h6>
-                        <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.</p>
+                        <p>With our user-friendly and simple online builder, you can quickly and easily generate your CV and resume, streamlining the job application process.</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -282,7 +286,8 @@
                         <!-- Icon -->
                         <div class="service_icon"> <img src="{{ asset('img/icons/f4.png') }}" alt=""> </div>
                         <h6>Free to use. Developed by hiring professionals.</h6>
-                        <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.</p>
+                        <p>Utilise our tool, which is free to use and was built by recruiting experts, to make sure your resume complies with requirements for success. 
+</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -291,7 +296,7 @@
                         <!-- Icon -->
                         <div class="service_icon"> <img src="{{ asset('img/icons/f5.png') }}" alt=""> </div>
                         <h6>Recruiter Approved Phrases with Module Notification</h6>
-                        <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.</p>
+                        <p>Enhance your CV with recruiter-approved words and sign up for module notifications to create an application that stands out to employers.</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -300,7 +305,7 @@
                         <!-- Icon -->
                         <div class="service_icon"> <img src="{{ asset('img/icons/f6.png') }}" alt=""> </div>
                         <h6>Fast Easy CV and Resume Formatting</h6>
-                        <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.</p>
+                        <p>Utilise our quick and simple tools to streamline the formatting of your CV and resume, saving you time and assuring a professional appearance. </p>
                     </div>
                 </div>
             </div>
@@ -315,7 +320,7 @@
                     <div class="section-heading text-center">
                         <div class="dream-dots justify-content-center"> <span></span><span></span><span></span><span></span><span></span><span></span><span></span> </div>
                         <h2>Your Success, Our Inspiration</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo. </p>
+                        <p>Your success serves as an example for us, and it motivates us to offer the best tools and resources for your professional progress.</p>
                     </div>
                 </div>
             </div>
@@ -391,7 +396,7 @@
                             <!-- Copywrite -->
                             <div class="copywrite_text fadeInUp" data-wow-delay="0.2s"> 
                                 <div class="footer-logo">
-                                    <a href="#"><img src="img/core-img/logo.png" alt="logo"> </a>
+                                    <a href="#"><img src="img/core-img/inxgo logo.png" alt="logo"> </a>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus voluptatibus neque illo id repellat quisquam? Autem expedita earum quae laborum ipsum ad.</p>
                             </div>

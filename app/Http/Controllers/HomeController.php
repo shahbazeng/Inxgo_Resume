@@ -25,5 +25,16 @@ class HomeController extends Controller
     {
         return view('home');
     }
-    
+        public function aboutus()
+    {
+        return view('pages.about');
+    }
+     public function allresume()
+    {
+        return view('pages.resumes');
+    }
+      public function inxgocontact()
+    {
+        return view('pages.contact us');
+    }
 }
