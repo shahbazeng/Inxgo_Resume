@@ -27,6 +27,13 @@ Auth::routes();
 Route::get('test',function(){
     return view('pdf.index');
 });
+//user 
+Route::get('user','UserController@index')->name('user');
+Route::get('user/create','UserController@create')->name('user/create');
+Route::post('user/store','UserController@store')->name('user/store');
+Route::get('user/delete/{id}','UserController@destroy')->name('user/delete');
+Route::get('user/update/{id}','UserController@edit')->name('user/edit');
+Route::post('user/update/{id}','UserController@update')->name('user/update');
 //Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home', 'BasicInfoController@create')->name('home');
 Route::post('/basic info store', 'BasicInfoController@store')->name('store');
