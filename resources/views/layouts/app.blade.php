@@ -61,11 +61,11 @@
                         <div class="classynav">
                             <ul id="nav">
                                 <li><a href="{{ url('/') }}">Home</a></li>
-                                <!--<li><a href="about-us.html">About Us</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="templates.html">Templates</a></li>
-                                <li><a href="contact-us.html">Contact</a></li>-->
-                                 <li class="nav-item">
+                                <li><a href="{{ route('resumes') }}">All Resumes</a></li>
+                                <!--<li><a href="pricing.html">Pricing</a></li>-->
+                                <li><a href="{{ route('about') }}">About</a></li>
+                                <li><a href="{{ route('contact us') }}">Contact</a></li>
+                                <!-- <li class="nav-item">
                                 <a class="nav-link {{ request()->is('home') ? 'active' : '' }}" href="{{ route('home') }}">Basic Info</a>
                             </li>
                             <li class="nav-item">
@@ -79,7 +79,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{ request()->is('ca_information_create') ? 'active' : '' }} {{ request()->is('ca_summery_display') ? 'active' : '' }}" href="{{ route('ca_create') }}">Career Object</a>
-                            </li>
+                            </li> -- >
 
                             </ul>
                            
