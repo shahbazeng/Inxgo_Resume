@@ -385,7 +385,66 @@
             </div>
         </div>
     </section>
+    <!--<section class="clients_testimonials_area section-padding-0-0">
+    <div class="jp_downlord_main_wrapper">
+        <div class="jp_downlord_img_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+                    <div class="jp_down_mob_img_wrapper"> <img src="{{ asset('img/mobail.png') }}" alt="mobail_img"> </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="ss_download_wrapper_details">
+                        <h1><span>Download</span><br>inxgo App Now!</h1>
+                        <p>Download the inxgo app and choose the best Suppliers for your problem with just two simple steps. You can also sell service near you and earn extra income whenever you want.</p>
+                <a href="#" class="ss_appstore"><span><i class="fa fa-apple" aria-hidden="true"></i></span> App Store</a> 
+                <a href="#" class="ss_playstore"><span><i class="fa fa-android" aria-hidden="true"></i></span> Play Store</a> 
+            </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>-->
     <!-- ##### Testimonial Area End ##### -->
+    <section class="clients_testimonials_area section-padding-0-0">
+      
+
+                  <div class="row g-2 height d-flex justify-content-center align-items-center">
+ <div class="col-md-6">
+                      
+
+                      <div class="text-center">
+
+                        <img src="{{ asset('img/mobail.png') }}" alt="inxgo app and free resume builder" width="400">
+                        
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+
+                      <div class="ss_download_wrapper_details">
+
+                    
+                        <h1><span>Download</span><br>inxgo App Now!</h1>
+                        <p style="color:white;">Download the inxgo app and choose the best Suppliers for your problem with just two simple steps. You can also sell service near you and earn extra income whenever you want.</p>
+
+                        <div class="buttons justify-content-center mt-3">
+
+                          <button class="btn btn-dark app-button mb-3"><i class="fa fa-apple fa-2x"></i><span class="text-uppercase ml-2">Apple store</span></button>
+                          <button class="btn btn-dark app-button"><i class="fa fa-play fa-2x"></i><span class="text-uppercase ml-2">Google store</span></button>
+                          
+                        </div>
+                        
+                      </div>
+                      
+
+                    </div>
+
+                   
+
+                </div>
+            </section>
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area bg-img">
         <div class="footer-content-area spec">
@@ -398,11 +457,34 @@
                                 <div class="footer-logo">
                                     <a href="#"><img src="img/core-img/inxgo logo.png" alt="logo"> </a>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus voluptatibus neque illo id repellat quisquam? Autem expedita earum quae laborum ipsum ad.</p>
+                                <p>inxgo is a market leader in offering resume building services that are completely free, enabling job searchers to easily construct professional resumes and open doors to new career chances.</p>
                             </div>
                             <!-- Social Icon -->
                             <div class="footer-social-info fadeInUp" data-wow-delay="0.4s"> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                     <div class="col-12 col-lg-2 col-md-6 ">
+                        <!-- Content Info -->
+                        <div class="contact_info_area d-sm-flex justify-content-between">
+                            <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.2s">
+                                <h5>Support</h5>
+                                <a href="">
+                                    <p>Company</p>
+                                </a>
+                                <a href="">
+                                    <p>All Resumes</p>
+                                </a>
+                                <a href="">
+                                    <p>Privacy Policy</p>
+                                </a>
+                                <a href="">
+                                    <p>FAQs</p>
+                                </a>
+                                <a href="">
+                                    <p>Contact</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-3 col-md-6">
@@ -428,38 +510,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-2 col-md-6 ">
-                        <!-- Content Info -->
-                        <div class="contact_info_area d-sm-flex justify-content-between">
-                            <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.2s">
-                                <h5>NAVIGATE</h5>
-                                <a href="">
-                                    <p>Advertisers</p>
-                                </a>
-                                <a href="">
-                                    <p>Developers</p>
-                                </a>
-                                <a href="">
-                                    <p>Resources</p>
-                                </a>
-                                <a href="">
-                                    <p>Company</p>
-                                </a>
-                                <a href="">
-                                    <p>Connect</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                   
                     <div class="col-12 col-lg-3 col-md-6 ">
                         <div class="contact_info_area d-sm-flex justify-content-between">
                             <!-- Content Info -->
                             <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.4s">
                                 <h5>CONTACT US</h5>
-                                <p>Mailing Address:xx00 E. Union Ave</p>
-                                <p>Suite 1100. Denver, CO 80237</p>
-                                <p>+999 90932 627</p>
-                                <p>support@yourdomain.com</p>
+                                <p>626 RXR Plaza, Uniondale, NY 11556</p>
+                                <p>Newyork</p>
+                                <p>1 (516) 522-2899</p>
+                                <p>support@inxgo.com</p>
                             </div>
                         </div>
                     </div>

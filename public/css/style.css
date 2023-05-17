@@ -3438,7 +3438,7 @@ textarea:required {
 }
 .footer-content-area{
     padding: 80px 0;
-    margin-top: 100px
+    /*margin-top: 100px*/
 }
 .footer-logo{
     margin-bottom: 15px
@@ -4518,3 +4518,66 @@ label{
     .bigbutton{
         background: black;
     }
+    .jp_downlord_img_overlay{
+    position:absolute;
+    top:0%;
+    left:0%;
+    right:0%;
+    bottom:0%;
+    background:rgb(255 118 59 / 91%);
+}
+.ss_download_wrapper_details{
+    float:left;
+    width:100%;
+    padding-top:4px;
+}
+.ss_download_wrapper_details h1{
+    float: left;
+    width: 100%;
+    color: #ffffff;
+    font-size: 44px;
+    margin: 0px 0px 30px 0px;
+    padding-bottom: 15px;
+    position: relative;
+    font-weight: 100;
+    text-transform:uppercase;
+}
+.ss_download_wrapper_details h1:before {
+    content: '';
+    border: 1px solid #ffffffcf;
+    width: 8px;
+    position: absolute;
+    bottom: -6px;
+    left: 5px;
+}
+.ss_download_wrapper_details h1:after {
+    content: '';
+    border: 1px solid #ffffffcf;
+    width: 30px;
+    position: absolute;
+    bottom: -6px;
+    left: 17px;
+}
+.height{
+        background: rgb(255 118 59);
+        height: 56vh;
+        padding-top: 36px;
+
+       }
+
+       .app-button{
+
+        width: 240px;
+        height: 58px;
+        border-radius: 10px;
+       }
+
+       .app-button span{
+
+        font-size: 18px;
+       }
+
+       .buttons{
+
+        display: grid;
+       }
