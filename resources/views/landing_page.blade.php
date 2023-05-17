@@ -313,7 +313,7 @@
     </section>
     <!-- ##### Our features Area End ##### -->
     <!-- ##### Testimonial Area Start ##### -->
-    <section class="clients_testimonials_area section-padding-0-0">
+ <!--<section class="clients_testimonials_area section-padding-0-0">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -329,51 +329,51 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-xs-10 offset-xs-1">
                     <div class="client_slides owl-carousel">
-                        <!-- Single Testimonial -->
+                        
                         <div class="single-testimonial text-center">
                             <div class="icon_wrapper"> <i class="fa fa-quote-right"></i> </div>
-                            <!-- Testimonial Image -->
+                         
                             <div class="testimonial_image"> <img src="{{ asset('img/test-img/1.jpg') }}" alt=""> </div>
-                            <!-- Testimonial Feedback Text -->
+                           
                             <div class="testimonial-description">
                                 <div class="testimonial_text">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nostrum adipisci porro quisquam. Rem, earum, tenetur? Architecto et, earum repudiandae.</p>
                                 </div>
-                                <!-- Admin Text -->
+                            
                                 <div class="admin_text">
                                     <h5>Sunny Khan</h5>
                                     <p>One of our Clients</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Testimonial -->
+                   
                         <div class="single-testimonial text-center">
                             <div class="icon_wrapper"> <i class="fa fa-quote-right"></i> </div>
-                            <!-- Testimonial Image -->
+                         
                             <div class="testimonial_image"> <img src="{{ asset('img/test-img/2.jpg') }}" alt=""> </div>
-                            <!-- Testimonial Feedback Text  -->
+                          
                             <div class="testimonial-description">
                                 <div class="testimonial_text">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nostrum adipisci porro quisquam. Rem, earum, tenetur? Architecto et, earum repudiandae.</p>
                                 </div>
-                                <!-- Admin Text -->
+                            
                                 <div class="admin_text">
                                     <h5>Ajoy Das</h5>
                                     <p>One of our Clients</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Testimonial -->
+             
                         <div class="single-testimonial text-center">
                             <div class="icon_wrapper"> <i class="fa fa-quote-right"></i> </div>
-                            <!-- Testimonial Image -->
+              
                             <div class="testimonial_image"> <img src="{{ asset('img/test-img/3.jpg') }}" alt=""> </div>
-                            <!-- Testimonial Feedback Text  -->
+                        
                             <div class="testimonial-description">
                                 <div class="testimonial_text">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nostrum adipisci porro quisquam. Rem, earum, tenetur? Architecto et, earum repudiandae.</p>
                                 </div>
-                                <!-- Admin Text -->
+                          
                                 <div class="admin_text">
                                     <h5>Jebin Khan</h5>
                                     <p>One of our Clients</p>
@@ -384,7 +384,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <!--<section class="clients_testimonials_area section-padding-0-0">
     <div class="jp_downlord_main_wrapper">
         <div class="jp_downlord_img_overlay"></div>
@@ -407,6 +407,74 @@
     </div>
 </section>-->
     <!-- ##### Testimonial Area End ##### -->
+    <!--Section: FAQ-->
+ <section class="our_services_area section-padding-100-70" id="services">
+        <div class="container"> 
+  <div class="section-heading text-center">
+                <!-- Dream Dots -->
+                <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s"> <span></span><span></span><span></span><span></span><span></span><span></span><span></span> </div>
+                <h2 class="wow fadeInUp" data-wow-delay="0.3s">Frequently Ask Questions</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">Learn the answers to frequently asked questions about Inxgo's free resume builder, including questions regarding features, customization, security, support, and other topics.</p>
+            </div>
+
+  <div class="row">
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h6 class="mb-3 text-primary"> Is the Inxgo resume builder truly cost-free?</h6>
+      <p>
+        <strong><u>Absolutely, yes!
+
+</u></strong>  Utilising Inxgo's resume builder is completely free. Your professional resume is free to create, update, and download.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h6 class="mb-3 text-primary">What technical knowledge is required to utilise Inxgo's platform?
+</h6>
+      <p>
+        <strong><u>In no way!
+</u></strong> The platform from Inxgo is made to be intuitive and user-friendly. Technical expertise is not necessary. Simply adhere to the step-by-step guidelines to quickly generate your CV.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h6 class="mb-3 text-primary">Can I alter the style and format of my resume?
+
+      </h6>
+      <p>
+        Yes, you can customise a variety of Inxgo templates to fit your needs. The layout, colours, typeface, and style may all be readily customised to produce a resume that is distinctive and appealing.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h6 class="mb-3 text-primary">Are the templates and content endorsed by recruiters? 
+
+      </h6>
+      <p>
+         <strong><u>Absolutely !
+
+</u></strong> inxgo's Templates and content on are carefully chosen by hiring experts. Your chances of being seen by employers are increased by the fact that they are created to adhere to industry standards and have the endorsement of recruiters.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h6 class="mb-3 text-primary">Can I get my resume in other file formats to download?
+
+      </h6>
+      <p>Yes, you may download your resume from Inxgo in a variety of common file formats, including PDF, DOCX, and TXT. Pick a resume format that works for you so you can quickly share it with potential employers.
+</p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h6 class="mb-3 text-primary">Is the platform used by Inxgo secure for my personal information?
+</h6>
+      <p>
+        inxgo does take data security and privacy seriously. The security and privacy of your data are guaranteed by the encryption and protection of your personal information.
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+<!--Section: FAQ-->
     <section class="clients_testimonials_area section-padding-0-0">
       
 

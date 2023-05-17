@@ -482,7 +482,7 @@ ol {
     padding-bottom: 50px;
 }
 .section-padding-100-70 {
-    padding-top: 100px;
+    padding-top: 0px;
     padding-bottom: 70px;
 }
 .section-padding-0-50 {
@@ -4559,6 +4559,7 @@ label{
     left: 17px;
 }
 .height{
+        margin-top:44px;
         background: rgb(255 118 59);
         height: 56vh;
         padding-top: 36px;
