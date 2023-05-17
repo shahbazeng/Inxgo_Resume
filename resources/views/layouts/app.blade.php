@@ -6,8 +6,9 @@
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <link rel="icon" href="{{ asset('img/inxgo favicon.ico') }}" type="image/x-icon">
 
-        <title> @yield('title','inXgo Resume')</title>
+        <title> @yield('title','inxgo - Free Resume Builder, Build Professional Cv and Resume')</title>
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
