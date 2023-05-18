@@ -83,7 +83,7 @@
         </div>
     </div>
     <!-- ##### Welcome Area Start ##### -->
-    <section class="welcome_area demo2 flex align-items-center">
+    <section class="welcome_area demo2 flex align-items-center"> 
         <div class="container">
             <div class="row align-items-center">
                 <!-- Welcome Content -->
