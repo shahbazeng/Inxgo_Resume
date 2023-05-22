@@ -35,6 +35,21 @@ class HomeController extends Controller
     }
       public function inxgocontact()
     {
-        return view('pages.contact us');
+        return view('pages.contactus');
+    }
+    public function contactStore(Request $request)
+    {
+        $request->validate([
+            'email' => 'required',
+            'subject' => 'required',
+            'message' => 'required',
+        ]);
+        $details = [
+        'title' => $request->subject,
+        'body' => $request->message,
+        ];
+        \Mail::to($request->email)->send(new \App\Mail\MyMail($details));
+        return redirect('contact');
+
     }
 }
