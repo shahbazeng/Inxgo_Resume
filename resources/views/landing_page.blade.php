@@ -97,7 +97,7 @@
                         <h1 class="wow fadeInUp" data-wow-delay="0.2s">Online Resume Builder With Creative Templates.</h1>
                         <p class="lead">Use professional field-tested resume templates that follow the exact <br> ‘resume rules’ employers look for. Easy to use and done within <br> minutes - try now for free! </p>
             
-                        <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s"> <a href="{{ route('home')}}" class="btn dream-btn green-btn mr-3">Get started for free </a>  <a href="{{ route('home')}}" class="btn dream-btn green-btn" style="background: #212529;border:2px solid #212529;"> No I like to waste money and pay <b style="font-size:17px;">😆</b></a></div>
+                        <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s"> <a href="{{ route('home')}}" class="btn dream-btn green-btn mr-3">Get started for free </a>  <a href="{{ route('home')}}" class="btn dream-btn green-btn" style="background: #212529;border:2px solid #212529;"> No, I like to waste money and pay <b style="font-size:17px;">😆</b></a></div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-12">
@@ -138,7 +138,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="who-we-contant mt-s">
                         <div class="dream-dots"> <span></span><span></span><span></span><span></span><span></span><span></span><span></span> </div>
-                        <h4>Why Choose Our Platform?</h4>
+                        <h4>Why Choose Us?</h4>
                         <p>Why should you select our platform when creating your resume? We provide a wide range of benefits. You may easily construct a standout professional resume using our user-friendly design.
 </p>
                         <p> Our website offers editable templates, professional advice, and immediate feedback to make sure your resume is recruiter-ready. You can rely on us for a smooth and effective job application procedure.</p> <a class="btn dream-btn mt-30" href="templates.html">lets build your cv</a> </div>
@@ -205,7 +205,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="side-feature-list-item"> <img src="{{ asset('img/icons/check.png') }}" class="check-mark-icon" alt="">
-                                <div class="foot-c-info">Use is free. developed by employing experts</div>
+                                <div class="foot-c-info"> Developed by HR experts</div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -259,7 +259,7 @@
                         <!-- Icon -->
                         <div class="service_icon"> <img src="{{ asset('img/icons/f1.png') }}" alt=""> </div>
                         <h6>Proven CV Templates to increase Hiring Chance</h6>
-                        <p>Utilise our tried-and-true CV templates, which have a successful track record in the job market, to increase your chances of being recruited.</p>
+                        <p>Utilize our tried-and-true CV templates, which have a successful track record in the job market, to increase your chances of being recruited.</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -286,7 +286,7 @@
                         <!-- Icon -->
                         <div class="service_icon"> <img src="{{ asset('img/icons/f4.png') }}" alt=""> </div>
                         <h6>Free to use. Developed by hiring professionals.</h6>
-                        <p>Utilise our tool, which is free to use and was built by recruiting experts, to make sure your resume complies with requirements for success. 
+                        <p>Utilize our tool, which is free to use and was built by recruiting experts, to make sure your resume complies with requirements for success. 
 </p>
                     </div>
                 </div>
@@ -305,7 +305,7 @@
                         <!-- Icon -->
                         <div class="service_icon"> <img src="{{ asset('img/icons/f6.png') }}" alt=""> </div>
                         <h6>Fast Easy CV and Resume Formatting</h6>
-                        <p>Utilise our quick and simple tools to streamline the formatting of your CV and resume, saving you time and assuring a professional appearance. </p>
+                        <p>Utilize our quick and simple tools to streamline the formatting of your CV and resume, saving you time and assuring a professional appearance.</p>
                     </div>
                 </div>
             </div>
@@ -423,7 +423,7 @@
       <p>
         <strong><u>Absolutely, yes!
 
-</u></strong>  Utilising Inxgo's resume builder is completely free. Your professional resume is free to create, update, and download.
+</u></strong>  Utilizing Inxgo's resume builder is completely free. Your professional resume is free to create, update, and download.
       </p>
     </div>
 
@@ -525,7 +525,7 @@
                                 <div class="footer-logo">
                                     <a href="#"><img src="img/core-img/inxgo logo.png" alt="logo"> </a>
                                 </div>
-                                <p>inxgo is a market leader in offering resume building services that are completely free, enabling job searchers to easily construct professional resumes and open doors to new career chances.</p>
+                                <p>inxgo is a market leader in offering professional resume building services, enabling job searchers, and open doors to new career paths.</p>
                             </div>
                             <!-- Social Icon -->
                             <div class="footer-social-info fadeInUp" data-wow-delay="0.4s"> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -586,7 +586,7 @@
                                 <h5>CONTACT US</h5>
                                 <p>626 RXR Plaza, Uniondale, NY 11556</p>
                                 <p>Newyork</p>
-                                <p>1 (516) 522-2899</p>
+                                <!--<p>1 (516) 522-2899</p>-->
                                 <p>support@inxgo.com</p>
                             </div>
                         </div>
