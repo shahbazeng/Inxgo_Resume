@@ -909,8 +909,8 @@ ol {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    letter-spacing: .58px;
-    font-size: 15px;
+    letter-spacing: -.58px;
+    font-size: 12px;
     line-height: 24px;
     color: #d5d5ea
 }
@@ -935,7 +935,7 @@ ol {
 }
 .integration-link.light .integration-text{
     color: #eb602f;
-    font-weight: 600;
+    font-weight: 500;
 }
 .integration-link.full:before{
     opacity: 1

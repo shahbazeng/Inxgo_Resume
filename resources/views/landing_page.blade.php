@@ -585,7 +585,7 @@
                             <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.4s">
                                 <h5>CONTACT US</h5>
                                 <p>626 RXR Plaza, Uniondale, NY 11556</p>
-                                <p>Newyork</p>
+                                <p>New York</p>
                                 <!--<p>1 (516) 522-2899</p>-->
                                 <p>support@inxgo.com</p>
                             </div>
