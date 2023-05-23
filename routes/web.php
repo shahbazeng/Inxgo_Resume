@@ -38,7 +38,9 @@ Route::post('user/update/{id}','UserController@update')->name('user/update');
 Route::get('/home', 'BasicInfoController@create')->name('home');
 Route::get('/resumes', 'HomeController@allresume')->name('resumes');
 Route::get('/about', 'HomeController@aboutus')->name('about');
-Route::get('/contact', 'HomeController@inxgocontact')->name('contact us');
+Route::get('/contact', 'HomeController@inxgocontact')->name('contact');
+Route::post('/contact_store', 'HomeController@contactStore')->name('contact_store');
+
 Route::post('/basic info store', 'BasicInfoController@store')->name('store');
 
 //education

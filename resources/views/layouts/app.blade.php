@@ -75,7 +75,7 @@
                                 <li><a href="{{ route('resumes') }}">All Resumes</a></li>
                                 <!--<li><a href="pricing.html">Pricing</a></li>-->
                                 <li><a href="{{ route('about') }}">About</a></li>
-                                <li><a href="{{ route('contact us') }}">Contact</a></li>
+                                <li><a href="{{ route('contact') }}">Contact</a></li>
                                 <!-- <li class="nav-item">
                                 <a class="nav-link {{ request()->is('home') ? 'active' : '' }}" href="{{ route('home') }}">Basic Info</a>
                             </li>
