@@ -16,8 +16,12 @@ use Laravel\Socialite\Facades\Socialite;
 
 
 Route::get('/', function () {
-    return view('landing_page');
+	return redirect()->away('https://resumebuilderlaravel.azurewebsites.net/comingsoon');    
+});
+Route::get('/free-online-resume-builder', function () {   
+	return view('landing_page');
 })->name('main_index');
+
 
 //Route::resource('user','UserController');
 
@@ -99,6 +103,7 @@ Route::post('/ca_update/{id}','CareerObjectController@update')->name('update');
 //PDF
 Route::get('pdf_display','PdfController@index')->name('pdf_index');
 Route::get('pdf_display2','PdfController@index2')->name('pdf_index2');
+Route::get('pdf_download2','PdfController@download2')->name('download2');
 Route::get('pdf_display3','PdfController@index3')->name('pdf_index3');
 Route::get('pdf_download','PdfController@download')->name('download');
 

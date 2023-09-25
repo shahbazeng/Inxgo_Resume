@@ -58,7 +58,7 @@
                 <!-- Classy Menu -->
                 <nav class="classy-navbar justify-content-between" id="dreamNav">
                     <!-- Logo -->
-                    <a class="nav-brand" href="{{ url('/') }}"><img src="{{ url('img/core-img/logo.png') }}" alt="logo"></a>
+                    <a class="nav-brand" href="{{ url('/free-online-resume-builder') }}"><img src="{{ url('img/core-img/logo.png') }}" alt="logo"></a>
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler"> <span class="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
@@ -71,7 +71,7 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul id="nav">
-                                <li><a href="{{ url('/') }}">Home</a></li>
+                                <li><a href="{{ url('/free-online-resume-builder') }}">Home</a></li>
                                 <li><a href="{{ route('resumes') }}">All Resumes</a></li>
                                 <!--<li><a href="pricing.html">Pricing</a></li>-->
                                 <li><a href="{{ route('about') }}">About</a></li>

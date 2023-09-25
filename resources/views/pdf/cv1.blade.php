@@ -8,31 +8,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog Template">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
-    <link rel="shortcut icon" href="favicon.ico">
     <!-- FontAwesome JS-->
-    <script src="{{ asset('resume/cv1/assets/fontawesome/js/all.min.js') }}" defer></script>
+   
     <!-- Theme CSS -->
-     <link href="{{ asset('resume/cv1/assets/css/style.css') }}" rel="stylesheet">
-    <link id="theme-style" rel="stylesheet" href="">
+ 
   </head>
-  <body>
-    <div class="container">
-      <div class="profile" style="background:#eedfda;">
+  <style>
+    .heading {
+    margin: 0;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+    .heading-light {
+    font-family: roboto;
+    text-align: center;
+    background: #d99e8c;
+    color: #000;
+        border-radius: 8%;
+        
+    justify-content: center;
+    align-items: center;
+
+    font-size: 17px;
+    }
+    .profile-info {
+          margin: auto;
+    width: 64%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .container {
+         
+      }
+      .profile {
+         
+      }
+      .list-item__title {
+            font-family: roboto;
+            font-size: 15px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+      .contacts-text {
+          font-family: roboto;
+          color: black;
+          text-decoration: none;
+          font-weight: 450;
+          line-height: 20.97px;
+      }
+      .list-item__date {
+          font-family: roboto;
+          font-size: 12px;
+          text-transform: uppercase;
+      }
+      .profile-text {
+            font-family: roboto;
+            font-size: 15px;
+            line-height: 24.19px;
+            margin-bottom: 30px;
+        }
+        .avatar {
+            width: 259px;
+            height: 259px;
+            border-radius: 50%;
+            background-color: White;
+        }
+        .about {
+              padding-bottom: 20px;
+              border-bottom: solid white;
+              text-align: center;
+              margin-bottom: 15px;
+          }
+          .body
+          {
+            background-color: #eedfda;
+          }
+  </style>
+  <body class={{ $data['flag']?'body':'' }} style="max-width: 850px ;">
+    <div class="row col-md-12">
+    <div class="container" style=" display: flex;
+          width: 850px;
+          background-color: #eedfda;
+          justify-content: space-between;
+          margin: 20px auto;
+          box-shadow: 1px 1px 10px rgba(0,0,0,0.1);">
+       
+          @if(!$data['flag'])
+          <div class="col-6 text-right">
+              <a href="{{ url('pdf_download')}}" class="btn btn-primary" onclick="return confirm('Are you Sure ?')">Download</a>
+          </div>
+          @endif
+      <div class="profile" style="margin-left: 0px!important;  height: 100%;width: 240px;display: inline-block; flex-basis: 35%;
+          background-color: #39383a;
+          color: #000;background:#eedfda;float:left;">
         <!--  <div class="profile-photo"></div>-->
-        <div class="profile-info" style="margin-top: 70px;">
-          <h2 class="heading heading-light"> Profile </h2>
+
+       
+        <div class="profile-info" style="margin: auto;
+        width: 64%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 50px;
+        padding-bottom: 70px;margin-top: 70px;">
+          <h2 class="heading heading-light" style="height: 28px;
+        width: 170px;"> Profile </h2>
           <p class="profile-text">
               {{$data['objective']->career_object }}
           </p>
           <div class="contacts">
-            <h2 class="heading heading-light"> EXPERTISE </h2>
+            <h2 class="heading heading-light" style="height: 28px;
+          width: 170px;"> EXPERTISE </h2>
             <ul style="font-size: 15px;font-family: roboto;">
               @foreach ($data['expert'] as $index)
                 <li>{{ $index->name }}</li>
               @endforeach()
             </ul>
           </div>
-          <h2 class="heading heading-light">SKILLS</h2>
+          <h2 class="heading heading-light" style="height: 28px;
+    width: 170px;">SKILLS</h2>
           <div class="skills">
             <ul class="skills-list">
               @foreach ($data['skill'] as $index)
@@ -41,7 +138,8 @@
               @endforeach()
             </ul>
           </div>
-          <h2 class="heading heading-light">REREFRENCES</h2>
+          <h2 class="heading heading-light" style="height: 28px;
+    width: 170px;">REREFRENCES</h2>
           @foreach ($data['references'] as $index)
             <ul style="margin-top:15px;">
               <h3 class="list-item__title">{{ $index->name}}</h3>
@@ -67,10 +165,17 @@
           </ul> --}}
         </div>
       </div>
-      <div class="profile" style="background:#d99e8c;margin-top: 115px;border-top-left-radius: 150px;border-top-right-radius: 150px;">
+      <div class="profile" style=" height: 100%; width: 280px;float:left;display: inline-block;background:#d99e8c;border-top-left-radius: 150px;border-top-right-radius: 150px;">
         <!--<div class="profile-photo"></div>-->
-        <div class="profile-info">
-          <img class="avatar" src="{{ asset('resume/cv1/assets/images/Happy-Man.png') }}">
+         <div class="profile-info" style="margin: auto;
+            width: 70%;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 50px;
+            padding-bottom: 70px;margin-top: 70px;">
+          <img class="avatar" style=" width: 200px;
+            height: 200px;
+            background-color: White;" src="{{  $data['url'] .'resume/cv1/assets/images/Happy-Man.png' }}">
           <div class="about">
             <h1 class="name">{{$data['basicInfo']->first_name }}{{" " .$data['basicInfo']->last_name }}</h1>
             <span class="position">{{$data['basicInfo']->profession }}</span>
@@ -99,10 +204,19 @@
           </div>
         </div>
       </div>
-      <div class="profile" style="background:#eedfda;">
+      <div class="profile" style="  height: 100%;width: 220px;float:left;display: inline-block;background:#eedfda;">
         <!-- <div class="profile-photo"></div>-->
-        <div class="profile-info" style="margin-top: 70px;">
-          <h2 class="heading heading-light"> WORK EXPERIENCE </h2>
+       
+
+          <div class="profile-info" style="margin: auto;
+            width: 64%;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 50px;
+            padding-bottom: 70px;margin-top: 70px;">
+
+          <h2 class="heading heading-light" style="height: 28px;
+    width: 170px;"> WORK EXPERIENCE </h2>
           <div class="experience">
             @foreach ($data['works'] as $work)
                 <ul style="margin-top:15px;">
@@ -129,7 +243,8 @@
             </ul> --}}
           </div>
           <div class="education">
-            <h2 class="heading heading-light"> EDUCATION </h2>
+            <h2 class="heading heading-light" style="height: 28px;
+    width: 170px;"> EDUCATION </h2>
             @foreach ($data['educations'] as $work)
                 
                 <ul>
@@ -160,7 +275,7 @@
           </div>
         </div>
       </div>
-      <script src="{{ asset('resume/cv1/assets/plugins/popper.min.js') }}" defer></script>
-      <script src="{{ asset('resume/cv1/assets/plugins/bootstrap/js/bootstrap.min.js') }}" defer></script>
+    </div>
+ 
   </body>
 </html>

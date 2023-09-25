@@ -22,7 +22,9 @@
 <body>
 <!-- PAGE STUFF -->
 <div class="rela-block page">
- 
+     <div class="row col-12 text-right">
+        <a href="{{ url('pdf_download2')}}"  style="float: right" class="btn btn-primary" onclick="return confirm('Are you Sure ?')">Download</a>
+    </div>
     <div class="side-bar">
         <div class="container">
         <div class="mugshot">
