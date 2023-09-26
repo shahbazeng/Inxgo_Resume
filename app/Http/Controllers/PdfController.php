@@ -25,6 +25,7 @@ class PdfController extends Controller
         $data= array();
         $url=config('app.url');
         $data['url']=$url;
+        $data['flag']=0;
         $data['basicInfo'] = basicInfo::where('user_id', $usrId)->first();
         $data['objective'] = CareerObject::where('user_id', $usrId)->first();
         $data['educations'] = Education::where('user_id', $usrId)->get();
@@ -105,6 +106,7 @@ class PdfController extends Controller
         $data['expert'] = Expert::where('user_id', $usrId)->get();
         $data['references'] = References::where('user_id', $usrId)->get();
         $data['url']=$url;
+         $data['flag']=1;
         $pdf = PDF::loadView('pdf.cv2',compact('data'));
         return $pdf->stream('resume.pdf');
     }

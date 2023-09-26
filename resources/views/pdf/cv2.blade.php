@@ -18,7 +18,7 @@
         transition: 0.35s ease;
       }
       .mugshot .logo {
-          margin: -23px;
+       
       }
       .content-container > h3 {
           margin: 0 auto 5px;
@@ -29,19 +29,18 @@
 
       .avatar {
           border: solid #f7e0c1 18px;
-          width: 259px;
-          height: 259px;
+         
           /*border-radius: 50%;*/
           background-color: White;
       }
       .greyed {
           background-color: #9f610e;
-          width: 100%;
-          max-width: 250px;
+          width: 163px;
+          max-width: 163px;
           text-align: center;
-          border-radius: 0px 79px 79px 5px;
+          /*border-radius: 0px 79px 79px 5px;*/
           font-family: "Open Sans";
-          font-size: 34px;
+          font-size: 20px;
           font-weight: bolder;
           letter-spacing: 2px;
           line-height: 100px;
@@ -84,9 +83,10 @@
       }
       .page {
           /*width: 90%;*/
-          max-width: 1200px;
+          max-width: 900px;
           margin: 80px auto;
           background-color: white;
+          height:900px;
           box-shadow: 6px 10px 28px 0px rgba(0, 0, 0, 0.4);
       }
       .rela-block {
@@ -98,22 +98,22 @@
           
       }
       .container {
-          height: 895px;
+          height: 500px;
           background-color: #F7E0C1;
-          width: 340px;
+          
           text-align: center;
-          margin-top: 289px;
+          
           border-radius: 70px;
       }
       .mugshot {
-          position: relative;
+          /*position: relative;*/
           top: $x;
           right: $x;
           bottom: 206px;
           left: $x;
           width: 210px;
           height: 88px;
-          margin: 70px;
+          margin: 37px;
       }
       .side-header {
           font-family: "Open Sans";
@@ -132,54 +132,71 @@
       } 
       .content-container {
           margin-right: 0;
-          width: calc(95% - 350px);
+          /*width: calc(95% - 350px);*/
+          width: 500px;
           padding: 25px 40px 50px;
       }
   </style>
   <body>
-    <!-- PAGE STUFF -->
-    <div class="rela-block page">
-      <div class="row col-12 text-right">
-        <a href="{{ url('pdf_download2')}}" style="float: right" class="btn btn-primary" onclick="return confirm('Are you Sure ?')">Download</a>
-      </div>
-      <div class="side-bar" style="position: absolute;top: $x;right: 60px;bottom: $x;left: 0;width: 400px;background-color: #9f610e;padding: 6px 30px 50px;height: 100%;">
-        <div class="container">
-          <div class="mugshot">
-            <div class="logo">
-              <img class="avatar" src="{{  $data['url'] .'resume/cv1/assets/images/Happy-Man.png' }}">
-            </div>
+    <div style="margin-top: 100px">
+      <div class="rela-block page">
+        <div class="row col-12 text-right">
+          <a href="{{ url('pdf_download2')}}" style="float: right" class="btn btn-primary" onclick="return confirm('Are you Sure ?')">Download</a>
+        </div>
+         @if($data['flag'] == 1)
+           <div class="side-bar" style="position: relative;display:inline-block; top: $x;right: 60px;bottom: $x;left: 0;width: 240px;background-color: #9f610e;padding: 6px 30px 50px;height: 500px;">
+        @else
+            <div class="side-bar" style="position: relative;display:inline-block; top: $x;right: 60px;bottom: $x;left: 0;width: 320px;background-color: #9f610e;padding: 6px 30px 50px;height: 500px;">
+        @endif
+
+        <div class="mugshot">
+                <div class="logo" >
+                @if($data['flag'] == 1)
+                  <img class="avatar" style=" width: 140px;height: 140px;" src="{{  $data['url'] .'resume/cv1/assets/images/Happy-Man.png' }}">
+                @else
+                <img class="avatar" style=" width: 200px;height: 200px;" src="{{  $data['url'] .'resume/cv1/assets/images/Happy-Man.png' }}">
+              @endif
+                </div>
+              </div>
+              @if($data['flag'] == 1)
+                <div class="container" style="width: 230px;">
+              @else
+                <div class="container" style="width: 280px;">
+              @endif
+                <div  style="padding-top: 106px;">
+                  <p >Contact</p>
+                  <p >{{$data['basicInfo']->phone }}</p>
+                  <p >{{$data['basicInfo']->email }}</p>
+                  <p >{{$data['basicInfo']->post_code }},{{$data['basicInfo']->address }}</p>
+                  <!--<p class="rela-block social twitter">Twitter stuff</p><p class="rela-block social pinterest">Pinterest things</p><p class="rela-block social linked-in">Linked-in man</p>-->
+                  <p class="rela-block caps side-header">Expertise</p> @foreach ($data['expert'] as $index) <p class="rela-block list-thing">{{ $index->name }}</p> @endforeach()
+                </div>
+              </div>
+        </div>
+        <div class="rela-block content-container" style="position: absolute;display:inline-block;" >
+          <div class="nametitle">
+             {{--  <h2>
+                {{$data['basicInfo']->first_name }}{{" " .$data['basicInfo']->last_name }}
+              </h2>
+              <h3> {{$data['basicInfo']->profession }}</h3> --}}
           </div>
-          <p class="rela-block caps side-header">Contact</p>
-          <p>{{$data['basicInfo']->phone }}</p>
-          <p>{{$data['basicInfo']->email }}</p>
-          <p>{{$data['basicInfo']->post_code }},{{$data['basicInfo']->address }}</p>
-          <!--<p class="rela-block social twitter">Twitter stuff</p><p class="rela-block social pinterest">Pinterest things</p><p class="rela-block social linked-in">Linked-in man</p>-->
-          <p class="rela-block caps side-header">Expertise</p> @foreach ($data['expert'] as $index) <p class="rela-block list-thing">{{ $index->name }}</p> @endforeach()
-        </div>
-      </div>
-      <div class="rela-block content-container" >
-        <div class="nametitle">
-           {{--  <h2>
-              {{$data['basicInfo']->first_name }}{{" " .$data['basicInfo']->last_name }}
-            </h2>
-            <h3> {{$data['basicInfo']->profession }}</h3> --}}
-        </div>
-        <div class="rela-block caps greyed">About Me</div>
-        <p class="long-margin">{{$data['objective']->career_object }}</p>
-        <div class="rela-block caps greyed">Experience</div>
-        @foreach ($data['works'] as $key=> $work) <h3>Job #{{$key+1}}</h3>
-          <p class="light">{{$work->company_name }}</p>
-          <p class="justified">
-            {{isset($work->about)?$work->about:null }}
-          </p>
-          @endforeach <div class="rela-block caps greyed">Education</div>
-          @foreach ($data['educations'] as $key=> $work)
-            <h3>Education #{{$key+1}}</h3>
-            <p class="light">{{$work->institute }}</p>
+          <div class="rela-block caps greyed">About Me</div>
+          <p class="long-margin">{{$data['objective']->career_object }}</p>
+          <div class="rela-block caps greyed">Experience</div>
+          @foreach ($data['works'] as $key=> $work) <h3>Job #{{$key+1}}</h3>
+            <p class="light">{{$work->company_name }}</p>
             <p class="justified">
-            {{isset($work->about)?$work->about:null }}
+              {{isset($work->about)?$work->about:null }}
             </p>
-          @endforeach
+            @endforeach <div class="rela-block caps greyed">Education</div>
+            @foreach ($data['educations'] as $key=> $work)
+              <h3>Education #{{$key+1}}</h3>
+              <p class="light">{{$work->institute }}</p>
+              <p class="justified">
+              {{isset($work->about)?$work->about:null }}
+              </p>
+            @endforeach
+        </div>
       </div>
     </div>
   </body>
