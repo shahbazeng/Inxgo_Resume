@@ -105,6 +105,7 @@ Route::get('pdf_display','PdfController@index')->name('pdf_index');
 Route::get('pdf_display2','PdfController@index2')->name('pdf_index2');
 Route::get('pdf_download2','PdfController@download2')->name('download2');
 Route::get('pdf_display3','PdfController@index3')->name('pdf_index3');
+Route::get('pdf_download3','PdfController@download3')->name('download3');
 Route::get('pdf_download','PdfController@download')->name('download');
 
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
