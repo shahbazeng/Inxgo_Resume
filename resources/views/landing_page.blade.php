@@ -97,7 +97,7 @@
                         <h1 class="wow fadeInUp" data-wow-delay="0.2s">Online Resume Builder With Creative Templates.</h1>
                         <p class="lead">Use professional field-tested resume templates that follow the exact <br> ‘resume rules’ employers look for. Easy to use and done within <br> minutes - try now for free! </p>
             
-                        <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s"> <a href="{{ route('home')}}" class="btn dream-btn green-btn mr-3">Get started for free </a>  <a href="{{ route('home')}}" class="btn dream-btn green-btn" style="background: #212529;border:2px solid #212529;"> No, I like to waste money and pay <b style="font-size:17px;">😆</b></a></div>
+                        <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s"> <a href="{{ url('free-online-resume-builder/home')}}" class="btn dream-btn green-btn mr-3">Get started for free </a>  <a href="{{ url('free-online-resume-builder/home')}}" class="btn dream-btn green-btn" style="background: #212529;border:2px solid #212529;"> No, I like to waste money and pay <b style="font-size:17px;">😆</b></a></div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-12">
@@ -157,19 +157,19 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
 
                    
-                        <a href="{{ route('resumes') }}"><img src="{{ asset('img/demos/demo-1.png') }}" alt="demo" class="img-responsive"></a>
+                        <a href="{{ url('free-online-resume-builder/resumes') }}"><img src="{{ asset('img/demos/demo-1.png') }}" alt="demo" class="img-responsive"></a>
                      <!--   <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div> -->
                    
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     
-                        <a href="{{ route('resumes') }}"><img src="{{ asset('img/demos/demo-2.png') }}" alt="demo" class="img-responsive"></a>
+                        <a href="{{ url('free-online-resume-builder/resumes') }}"><img src="{{ asset('img/demos/demo-2.png') }}" alt="demo" class="img-responsive"></a>
                        <!--   <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div> -->
                     </div>
                
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     
-                        <a href="{{ route('resumes') }}"><img src="{{ asset('img/demos/demo-3.png') }}" alt="demo" class="img-responsive"></a>
+                        <a href="{{ url('free-online-resume-builder/resumes') }}"><img src="{{ asset('img/demos/demo-3.png') }}" alt="demo" class="img-responsive"></a>
                         <!--   <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div> --> 
 
                  

@@ -72,10 +72,10 @@
                         <div class="classynav">
                             <ul id="nav">
                                 <li><a href="{{ url('/free-online-resume-builder') }}">Home</a></li>
-                                <li><a href="{{ route('resumes') }}">All Resumes</a></li>
+                                <li><a href="{{ url('/free-online-resume-builder/resumes') }}">All Resumes</a></li>
                                 <!--<li><a href="pricing.html">Pricing</a></li>-->
-                                <li><a href="{{ route('about') }}">About</a></li>
-                                <li><a href="{{ route('contact') }}">Contact</a></li>
+                                <li><a href="{{ url('/free-online-resume-builder/about') }}">About</a></li>
+                                <li><a href="{{ url('/free-online-resume-builder/contact') }}">Contact</a></li>
                                 <!-- <li class="nav-item">
                                 <a class="nav-link {{ request()->is('home') ? 'active' : '' }}" href="{{ route('home') }}">Basic Info</a>
                             </li>

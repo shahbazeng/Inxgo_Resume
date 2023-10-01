@@ -16,7 +16,7 @@ use Laravel\Socialite\Facades\Socialite;
 
 
 Route::get('/', function () {
-	return redirect()->away('https://resumebuilderlaravel.azurewebsites.net/comingsoon');    
+	return redirect()->away('/comingsoon');    
 });
 Route::get('/free-online-resume-builder', function () {   
 	return view('landing_page');
@@ -39,10 +39,10 @@ Route::get('user/delete/{id}','UserController@destroy')->name('user/delete');
 Route::get('user/update/{id}','UserController@edit')->name('user/edit');
 Route::post('user/update/{id}','UserController@update')->name('user/update');
 //Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/home', 'BasicInfoController@create')->name('home');
-Route::get('/resumes', 'HomeController@allresume')->name('resumes');
-Route::get('/about', 'HomeController@aboutus')->name('about');
-Route::get('/contact', 'HomeController@inxgocontact')->name('contact');
+Route::get('/free-online-resume-builder/home', 'BasicInfoController@create')->name('home');
+Route::get('/free-online-resume-builder/resumes', 'HomeController@allresume')->name('resumes');
+Route::get('/free-online-resume-builder/about', 'HomeController@aboutus')->name('about');
+Route::get('/free-online-resume-builder/contact', 'HomeController@inxgocontact')->name('contact');
 Route::post('/contact_store', 'HomeController@contactStore')->name('contact_store');
 
 Route::post('/basic info store', 'BasicInfoController@store')->name('store');

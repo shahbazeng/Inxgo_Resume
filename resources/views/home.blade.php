@@ -18,7 +18,7 @@
 
                        <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link {{ request()->is('home') ? 'active' : '' }}" href="{{ route('home') }}">Basic Info</a>
+                                <a class="nav-link {{ request()->is('home') ? 'active' : '' }}" href="{{ url('free-online-resume-builder/home') }}">Basic Info</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{ request()->is('education_summery') ? 'active' : '' }} {{ request()->is('education_information') ? 'active' : '' }}" href="{{ route('education_create') }}">Education</a>
