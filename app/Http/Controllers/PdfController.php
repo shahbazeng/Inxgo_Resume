@@ -127,6 +127,6 @@ class PdfController extends Controller
         $data['references'] = References::where('user_id', $usrId)->get();
         PDF::setOptions(['dpi' => 250, 'defaultFont' => 'sans-serif']);
         $pdf = PDF::loadView('pdf.index',compact('data'));
-        return $pdf->download('myresume.pdf');
+        return $pdf->stream('myresume.pdf');
     }
 }

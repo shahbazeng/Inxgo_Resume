@@ -47,18 +47,7 @@
           margin-left: -50px;
       }
       .nametitle {
-          height: 210px;
-          border-radius: 0px 100px 100px 0px;
-          background-color: #f7e0c1;
-          width: 100%;
-          max-width: 700px;
-          text-align: center;
-          font-family: "Open Sans";
-          font-size: 18px;
-          font-weight: 600;
-          letter-spacing: 6px;
-          line-height: 100px;
-          margin-left: -50px;
+          
       }
       .content-container > p.long-margin {
           margin: 0 auto 50px;
@@ -86,7 +75,7 @@
           max-width: 900px;
           margin: 80px auto;
           background-color: white;
-          height:900px;
+          height:1500px;
           box-shadow: 6px 10px 28px 0px rgba(0, 0, 0, 0.4);
       }
       .rela-block {
@@ -140,11 +129,13 @@
   <body>
     <div style="margin-top: 100px">
       <div class="rela-block page">
+        @if($data['flag'] == 0)
         <div class="row col-12 text-right">
           <a href="{{ url('pdf_download2')}}" style="float: right" class="btn btn-primary" onclick="return confirm('Are you Sure ?')">Download</a>
         </div>
+        @endif
          @if($data['flag'] == 1)
-           <div class="side-bar" style="position: relative;display:inline-block; top: $x;right: 60px;bottom: $x;left: 0;width: 240px;background-color: #9f610e;padding: 6px 30px 50px;height: 500px;">
+           <div class="side-bar" style="position: relative;display:inline-block; top: 100px;right: 60px;bottom: $x;left: 0;width: 240px;background-color: #9f610e;padding: 6px 30px 50px;height: 500px;">
         @else
             <div class="side-bar" style="position: relative;display:inline-block; top: $x;right: 60px;bottom: $x;left: 0;width: 320px;background-color: #9f610e;padding: 6px 30px 50px;height: 500px;">
         @endif
@@ -169,12 +160,38 @@
                   <p >{{$data['basicInfo']->email }}</p>
                   <p >{{$data['basicInfo']->post_code }},{{$data['basicInfo']->address }}</p>
                   <!--<p class="rela-block social twitter">Twitter stuff</p><p class="rela-block social pinterest">Pinterest things</p><p class="rela-block social linked-in">Linked-in man</p>-->
-                  <p class="rela-block caps side-header">Expertise</p> @foreach ($data['expert'] as $index) <p class="rela-block list-thing">{{ $index->name }}</p> @endforeach()
+                  <p class="rela-block caps side-header">Expertise</p> @foreach ($data['expert'] as $index) <p class="rela-block list-thing" style={{$data['flag'] == 1 ? "padding-top: 70px":'' }} >{{ $index->name }}</p> @endforeach()
                 </div>
               </div>
         </div>
         <div class="rela-block content-container" style="position: absolute;display:inline-block;" >
-          <div class="nametitle">
+           @if($data['flag'] == 1)
+          <div class="nametitle" style="height: 210px;
+          border-radius: 0px 100px 100px 0px;
+          background-color: #f7e0c1;
+          width: 60%;
+          max-width: 700px;
+          text-align: center;
+          font-family: "Open Sans";
+          font-size: 18px;
+          font-weight: 600;
+          letter-spacing: 6px;
+          line-height: 100px;>
+          @else
+            <div class="nametitle" style="height: 210px;
+          border-radius: 0px 100px 100px 0px;
+          background-color: #f7e0c1;
+          width: 100%;
+          max-width: 700px;
+          text-align: center;
+          font-family: "Open Sans";
+          font-size: 18px;
+          font-weight: 600;
+          letter-spacing: 6px;
+          line-height: 100px;
+          margin-top: -25px;
+          margin-left: -50px;">
+          @endif
              {{--  <h2>
                 {{$data['basicInfo']->first_name }}{{" " .$data['basicInfo']->last_name }}
               </h2>
@@ -183,20 +200,41 @@
           <div class="rela-block caps greyed">About Me</div>
           <p class="long-margin">{{$data['objective']->career_object }}</p>
           <div class="rela-block caps greyed">Experience</div>
-          @foreach ($data['works'] as $key=> $work) <h3>Job #{{$key+1}}</h3>
+          @foreach ($data['works'] as $key=> $work) 
+            <h3>Job #{{$key+1}}</h3>
+            @if($data['flag'] == 1)
+              <br>
+            @endif
             <p class="light">{{$work->company_name }}</p>
+           @if($data['flag'] == 1)
+              <br>
+            @endif
             <p class="justified">
               {{isset($work->about)?$work->about:null }}
             </p>
-            @endforeach <div class="rela-block caps greyed">Education</div>
-            @foreach ($data['educations'] as $key=> $work)
-              <h3>Education #{{$key+1}}</h3>
-              <p class="light">{{$work->institute }}</p>
-              <p class="justified">
-              {{isset($work->about)?$work->about:null }}
-              </p>
+           @if($data['flag'] == 1)
+              <br>
+            @endif
             @endforeach
-        </div>
+            <div class="rela-block caps greyed" >Education</div>
+              @foreach ($data['educations'] as $key=> $work)
+                <h3>Education #{{$key+1}}</h3>
+                 @if($data['flag'] == 1)
+                  <br>
+                @endif
+                  <p class="light">{{$work->institute }}</p>
+                  @if($data['flag'] == 1)
+                  <br>
+                @endif
+                  <p class="justified"  >
+                  {{isset($work->about)?$work->about:null }}
+                  </p>
+                 @if($data['flag'] == 1)
+                  <br>
+                @endif
+
+              @endforeach
+            </div>
       </div>
     </div>
   </body>
