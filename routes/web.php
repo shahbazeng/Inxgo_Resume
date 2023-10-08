@@ -14,6 +14,13 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
+Route::get('/admin', function () {
+	return view('admin.index');  
+});
+
+Route::get('/admin/table', function () {
+	return view('admin.table');  
+});
 
 Route::get('/', function () {
 	return redirect()->away('/comingsoon');    
