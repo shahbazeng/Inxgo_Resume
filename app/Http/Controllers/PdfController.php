@@ -23,7 +23,9 @@ class PdfController extends Controller
     public function index(){
         $usrId = Auth::user()->id;
         $data= array();
-
+        $url=config('app.url');
+        $data['url']=$url;
+        $data['flag']=0;
         $data['basicInfo'] = basicInfo::where('user_id', $usrId)->first();
         $data['objective'] = CareerObject::where('user_id', $usrId)->first();
         $data['educations'] = Education::where('user_id', $usrId)->get();
@@ -37,7 +39,9 @@ class PdfController extends Controller
     public function index2(){
         $usrId = Auth::user()->id;
         $data= array();
-
+        $url=config('app.url');
+        $data['url']=$url;
+        $data['flag']=0;
         $data['basicInfo'] = basicInfo::where('user_id', $usrId)->first();
         $data['objective'] = CareerObject::where('user_id', $usrId)->first();
         $data['educations'] = Education::where('user_id', $usrId)->get();
@@ -48,10 +52,33 @@ class PdfController extends Controller
         $data['references'] = References::where('user_id', $usrId)->get();
         return view('pdf.cv1',compact('data'));
     }
+    public function download2()
+    {
+        $usrId = Auth::user()->id;
+        $data= array();
+        $data['flag']=1;
+        $url=config('app.url');
+        $data['basicInfo'] = basicInfo::where('user_id', $usrId)->first();
+        $data['objective'] = CareerObject::where('user_id', $usrId)->first();
+        $data['educations'] = Education::where('user_id', $usrId)->get();
+        $data['works'] = Work::where('user_id', $usrId)->get();
+        $data['cetificates'] = Certificate::where('user_id', $usrId)->get();
+        $data['skill'] = Skill::where('user_id', $usrId)->get();
+        $data['expert'] = Expert::where('user_id', $usrId)->get();
+        $data['references'] = References::where('user_id', $usrId)->get();
+        $data['url']=$url;
+
+        
+        $pdf = PDF::loadView('pdf.cv1',compact('data'));
+        // dd($pdf);
+        return $pdf->stream('resume.pdf');
+        // return $pdf->download('myresume.pdf');
+    }
     public function index3(){
         $usrId = Auth::user()->id;
         $data= array();
-
+        $url=config('app.url');
+        $data['url']=$url;
         $data['basicInfo'] = basicInfo::where('user_id', $usrId)->first();
         $data['objective'] = CareerObject::where('user_id', $usrId)->first();
         $data['educations'] = Education::where('user_id', $usrId)->get();
@@ -62,6 +89,28 @@ class PdfController extends Controller
         $data['references'] = References::where('user_id', $usrId)->get();
         return view('pdf.index',compact('data'));
     }
+
+    public function download3()
+    {
+        $usrId = Auth::user()->id;
+        $data= array();
+        $data['flag']=1;
+        $url=config('app.url');
+        $data['url']=$url;
+        $data['basicInfo'] = basicInfo::where('user_id', $usrId)->first();
+        $data['objective'] = CareerObject::where('user_id', $usrId)->first();
+        $data['educations'] = Education::where('user_id', $usrId)->get();
+        $data['works'] = Work::where('user_id', $usrId)->get();
+        $data['cetificates'] = Certificate::where('user_id', $usrId)->get();
+        $data['skill'] = Skill::where('user_id', $usrId)->get();
+        $data['expert'] = Expert::where('user_id', $usrId)->get();
+        $data['references'] = References::where('user_id', $usrId)->get();
+        $data['url']=$url;
+         $data['flag']=1;
+        $pdf = PDF::loadView('pdf.cv2',compact('data'));
+        return $pdf->stream('resume.pdf');
+    }
+
 
     public function download()
     {
@@ -78,6 +127,6 @@ class PdfController extends Controller
         $data['references'] = References::where('user_id', $usrId)->get();
         PDF::setOptions(['dpi' => 250, 'defaultFont' => 'sans-serif']);
         $pdf = PDF::loadView('pdf.index',compact('data'));
-        return $pdf->download('myresume.pdf');
+        return $pdf->stream('myresume.pdf');
     }
 }

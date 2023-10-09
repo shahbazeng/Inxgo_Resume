@@ -14,10 +14,21 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
+Route::get('/admin', function () {
+	return view('admin.index');  
+});
+
+Route::get('/admin/table', function () {
+	return view('admin.table');  
+});
 
 Route::get('/', function () {
-    return view('landing_page');
+	return redirect()->away('/comingsoon');    
+});
+Route::get('/free-online-resume-builder', function () {   
+	return view('landing_page');
 })->name('main_index');
+
 
 //Route::resource('user','UserController');
 
@@ -35,10 +46,10 @@ Route::get('user/delete/{id}','UserController@destroy')->name('user/delete');
 Route::get('user/update/{id}','UserController@edit')->name('user/edit');
 Route::post('user/update/{id}','UserController@update')->name('user/update');
 //Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/home', 'BasicInfoController@create')->name('home');
-Route::get('/resumes', 'HomeController@allresume')->name('resumes');
-Route::get('/about', 'HomeController@aboutus')->name('about');
-Route::get('/contact', 'HomeController@inxgocontact')->name('contact');
+Route::get('/free-online-resume-builder/home', 'BasicInfoController@create')->name('home');
+Route::get('/free-online-resume-builder/resumes', 'HomeController@allresume')->name('resumes');
+Route::get('/free-online-resume-builder/about', 'HomeController@aboutus')->name('about');
+Route::get('/free-online-resume-builder/contact', 'HomeController@inxgocontact')->name('contact');
 Route::post('/contact_store', 'HomeController@contactStore')->name('contact_store');
 
 Route::post('/basic info store', 'BasicInfoController@store')->name('store');
@@ -99,7 +110,9 @@ Route::post('/ca_update/{id}','CareerObjectController@update')->name('update');
 //PDF
 Route::get('pdf_display','PdfController@index')->name('pdf_index');
 Route::get('pdf_display2','PdfController@index2')->name('pdf_index2');
+Route::get('pdf_download2','PdfController@download2')->name('download2');
 Route::get('pdf_display3','PdfController@index3')->name('pdf_index3');
+Route::get('pdf_download3','PdfController@download3')->name('download3');
 Route::get('pdf_download','PdfController@download')->name('download');
 
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);

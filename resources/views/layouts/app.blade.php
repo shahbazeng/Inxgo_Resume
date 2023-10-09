@@ -57,7 +57,11 @@
                 <!-- Classy Menu -->
                 <nav class="classy-navbar justify-content-between" id="dreamNav">
                     <!-- Logo -->
+<<<<<<< HEAD
                     <a class="nav-brand" href="{{ url('/') }}"><img src="{{ url('img/core-img/logo.webp') }}" alt="inxgo free resume builder"></a>
+=======
+                    <a class="nav-brand" href="{{ url('/free-online-resume-builder') }}"><img src="{{ url('img/core-img/logo.png') }}" alt="logo"></a>
+>>>>>>> f106aedc8b101e350c89c4ea291d219744db6695
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler"> <span class="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
@@ -70,11 +74,11 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul id="nav">
-                                <li><a href="{{ url('/') }}">Home</a></li>
-                                <li><a href="{{ route('resumes') }}">All Resumes</a></li>
+                                <li><a href="{{ url('/free-online-resume-builder') }}">Home</a></li>
+                                <li><a href="{{ url('/free-online-resume-builder/resumes') }}">All Resumes</a></li>
                                 <!--<li><a href="pricing.html">Pricing</a></li>-->
-                                <li><a href="{{ route('about') }}">About</a></li>
-                                <li><a href="{{ route('contact') }}">Contact</a></li>
+                                <li><a href="{{ url('/free-online-resume-builder/about') }}">About</a></li>
+                                <li><a href="{{ url('/free-online-resume-builder/contact') }}">Contact</a></li>
                                 <!-- <li class="nav-item">
                                 <a class="nav-link {{ request()->is('home') ? 'active' : '' }}" href="{{ route('home') }}">Basic Info</a>
                             </li>
