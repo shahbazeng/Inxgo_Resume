@@ -21,13 +21,23 @@ Route::get('/admin', function () {
 Route::get('/admin/table', function () {
 	return view('admin.table');  
 });
-
+Route::get('/admin/form', function () {
+	return view('admin.form');  
+});
 Route::get('/', function () {
 	return redirect()->away('/comingsoon');    
 });
 Route::get('/free-online-resume-builder', function () {   
 	return view('landing_page');
 })->name('main_index');
+
+
+//admin user 
+Route::get('admin/user','AdminUserController@index');
+Route::get('admin/user/create','AdminUserController@create');
+Route::post('admin/user/store','AdminUserController@store');
+Route::get('admin/user/delete/{id}','AdminUserController@delete');
+Route::get('admin/user/edit/{id}','AdminUserController@edit');
 
 
 //Route::resource('user','UserController');
