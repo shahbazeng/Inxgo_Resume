@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 {{-- <div id="preloader">
         <div class="preload-content">
@@ -20,7 +19,7 @@
                 </div>
                 <div class="col-12 col-md-12">
                     <div class="group">
-                        <input type="password" name="name" id="name1" required=""> <span class="highlight"></span> <span class="bar"></span>
+        <input type="password" name="name" id="name1" required=""> <span class="highlight"></span> <span class="bar"></span>
                         <label>Password</label>
                     </div>
                 </div>
@@ -34,8 +33,13 @@
         </form>
         <div class="other-accounts text-center">
             <p class="w-text">Login with other account</p>
-            <div class="footer-social-info"> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
+            <div class="footer-social-info"> 
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a> 
+                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> 
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
         </div>
     </div>
     <!-- signup popup form so: -->
@@ -56,16 +60,16 @@
                         <label>Email</label>
                     </div>
                 </div>
-                <div class="col-12 col-md-12">
-                    <div class="group">
-                        <input type="password" name="name" id="name5" required=""> <span class="highlight"></span> <span class="bar"></span>
-                        <label>Password</label>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12">
-                    <div class="group">
-                        <input type="password" name="name" id="name6" required=""> <span class="highlight"></span> <span class="bar"></span>
-                        <label>Confirm Password</label>
+    <div class="col-12 col-md-12">
+    <div class="group">
+    <input type="password" name="name" id="name5" required=""> <span class="highlight"></span><span class="bar"></span>
+    <label>Password</label>
+    </div>
+    </div>
+    <div class="col-12 col-md-12">
+    <div class="group">
+ <input type="password" name="name" id="name6" required=""> <span class="highlight"></span> <span class="bar"></span>
+                    <label>Confirm Password</label>
                     </div>
                 </div>
                 <div class="col-12 col-sm-5 text-left ">
@@ -78,8 +82,12 @@
         </form>
         <div class="other-accounts text-center">
             <p class="w-text">Login with other account</p>
-            <div class="footer-social-info"> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
+            <div class="footer-social-info"> 
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a> 
+                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> 
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
         </div>
     </div>
     <!-- ##### Welcome Area Start ##### -->
@@ -90,6 +98,18 @@
                 <div class="col-12 col-lg-6 col-md-12"> 
                     <div class="welcome-content v2">
                         <div class="promo-section">
+<<<<<<< HEAD
+                            <div class="integration-link light"> 
+                            <span class="integration-icon">
+ <img src="{{ asset('img/svg/img-dollar.svg') }}" width="24" height="24" alt="inxgo free cv resume builder"></span> 
+                    <span class="integration-text">Build, download, or share Your CV | Resume 100 % Free!</span>
+                </div>
+                </div>
+                <h1 class="wow fadeInUp" data-wow-delay="0.2s">Online Resume Builder With Creative Templates.</h1>
+                <p class="lead">Use professional field-tested resume templates that follow the exact <br> ‘resume rules’ employers look for. Easy to use and done within <br> minutes - try now for free! </p>
+                <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s"> <a href="{{ route('home')}}" class="btn dream-btn green-btn mr-3">Get started for free </a>  <a href="{{ route('home')}}" class="btn dream-btn green-btn" style="background: #212529;border:2px solid #212529;"> No, I like to waste money and pay <b style="font-size:17px;">😆</b></a></div>
+                </div>
+=======
                             <div class="integration-link light"> <span class="integration-icon">
                                     <img src="{{ asset('img/svg/img-dollar.svg') }}" width="24" height="24" alt="inxgo cv resume builder">
                                 </span> <span class="integration-text">Build, download, or share Your CV | Resume 100 % Free!</span> </div>
@@ -99,9 +119,10 @@
             
                         <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s"> <a href="{{ url('free-online-resume-builder/home')}}" class="btn dream-btn green-btn mr-3">Get started for free </a>  <a href="{{ url('free-online-resume-builder/home')}}" class="btn dream-btn green-btn" style="background: #212529;border:2px solid #212529;"> No, I like to waste money and pay <b style="font-size:17px;">😆</b></a></div>
                     </div>
+>>>>>>> f106aedc8b101e350c89c4ea291d219744db6695
                 </div>
                 <div class="col-12 col-lg-6 col-md-12">
-                    <div class="banner-box"> <img src="{{ asset('img/core-img/banner2.png') }}" alt="inxgo cv resume builder"> </div>
+                    <div class="banner-box"> <img src="{{ asset('img/core-img/banner2.webp') }}" alt="inxgo free cv resume builder"> </div>
                 </div>
             </div>
         </div>
@@ -122,9 +143,9 @@
                     </div>
                     <div class="services-block-four">
                         <div class="inner-box">
-                            <div class="icon-img-box"> <img src="{{ asset('img/icons/d2.png') }}" alt=""> </div>
-                            <h3><a href="#">Step by Step Expert Tips</a></h3>
-                            <div class="text">With inxgo detailed online resume creator and step-by-step expert suggestions, you can maximise your career potential.</div>
+                        <div class="icon-img-box"> <img src="{{ asset('img/icons/d2.png') }}" alt=""> </div>
+                        <h3><a href="#">Step by Step Expert Tips</a></h3>
+                        <div class="text">With inxgo detailed online resume creator and step-by-step expert suggestions, you can maximise your career potential.</div>
                         </div>
                     </div>
                     <div class="services-block-four" style="margin-bottom:0">
@@ -140,22 +161,42 @@
                         <div class="dream-dots"> <span></span><span></span><span></span><span></span><span></span><span></span><span></span> </div>
                         <h4>Why Choose Us?</h4>
                         <p>Why should you select our platform when creating your resume? We provide a wide range of benefits. You may easily construct a standout professional resume using our user-friendly design.
-</p>
+                        </p>
                         <p> Our website offers editable templates, professional advice, and immediate feedback to make sure your resume is recruiter-ready. You can rely on us for a smooth and effective job application procedure.</p> <a class="btn dream-btn mt-30" href="templates.html">lets build your cv</a> </div>
-                </div>
+        </div>
+        </div>
+        </div>
+</section>
+<section class="demo section-padding-100 ring-bg">
+    <div class="container">
+        <div class="section-heading text-center">
+            <div class="dream-dots justify-content-center">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <h2 class="bold">Our Creative Templates</h2>
+            <p>With our extensive selection of fashionable and expert templates for a standout resume, unleash your creativity.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="{{ route('resumes') }}">  <div class="image-overlay"><img src="{{ asset('img/demos/demo-1.webp') }}" alt="demo" class="img-responsive"></div></a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="{{ route('resumes') }}">  <div class="image-overlay"><img src="{{ asset('img/demos/demo-2.webp') }}" alt="demo" class="img-responsive"></div></a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="{{ route('resumes') }}">  <div class="image-overlay"><img src="{{ asset('img/demos/demo-3.webp') }}" alt="demo" class="img-responsive"></div></a>
             </div>
         </div>
-    </section>
-      <section class="demo section-padding-100 ring-bg">
-        <div class="container">
-            <div class="section-heading text-center">
-                <div class="dream-dots justify-content-center"> <span></span><span></span><span></span><span></span><span></span><span></span><span></span> </div>
-                <h2 class="bold">Our Creative Templates</h2>
-            <p>With our extensive selection of fashionable and expert templates for a standout resume, unleash your creativity.</p>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+                <a href="{{ route('resumes') }}" class="btn btn-primary" style="padding:1rem 4.6rem 1rem;border-radius: 3.2rem;">Salect A Templates</a>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+        </div>
+    </div>
+</section>
 
+<<<<<<< HEAD
+=======
                    
                         <a href="{{ url('free-online-resume-builder/resumes') }}"><img src="{{ asset('img/demos/demo-1.png') }}" alt="demo" class="img-responsive"></a>
                      <!--   <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div> -->
@@ -171,13 +212,9 @@
                     
                         <a href="{{ url('free-online-resume-builder/resumes') }}"><img src="{{ asset('img/demos/demo-3.png') }}" alt="demo" class="img-responsive"></a>
                         <!--   <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div> --> 
+>>>>>>> f106aedc8b101e350c89c4ea291d219744db6695
 
-                 
-                </div>
 
-            </div>
-     
-    </section>
     <!-- ##### About Us Area Start ##### -->
     <section class="about-us-area section-padding-100 clearfix">
         <div class="container">
@@ -223,7 +260,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="welcome-meter wow fadeInUp mt-s" data-wow-delay="0.3s"> <img src="{{ asset('img/core-img/cv.png') }}" class="center-block" alt="inxgo cv resume builder templates"> </div>
+                    <div class="welcome-meter wow fadeInUp mt-s" data-wow-delay="0.3s"> <img src="{{ asset('img/core-img/cv1.webp') }}" class="center-block" alt="inxgo cv resume builder templates"> </div>
                 </div>
             </div>
         </div>
@@ -235,14 +272,13 @@
         <div class="subscribe">
             <div class="row align-items-center relative"> <img src="{{ asset('img/core-img/custom.png') }}" alt="" class="custom">
                 <div class="col-lg-5 col-lg-offset-3 col-md-9 col-xs-12">
-                    <h2 class="bold mb-0">Do you Need a Complete Custom CV Template?</h2> </div>
-                <div class="col-lg-3 col-lg-offset-1 col-md-3 col-sm-12 text-center"> <a href="contact-us.html" class="button mt-s">Send a Request</a> </div>
+                    <h2 class="bold mb-0">Do you Need a Complete Custom CV Template?</h2></div>
+                <div class="col-lg-3 col-lg-offset-1 col-md-3 col-sm-12 text-center"> <a href="contact-us.html" class="button mt-s">Send a Request</a></div>
             </div>
         </div>
     </section>
     <!-- ##### Area End ##### -->
- 
-  
+
     <!-- ##### Our features Area Start ##### -->
     <section class="our_services_area section-padding-100-70" id="services">
         <div class="container">
@@ -288,7 +324,7 @@
                         <h6>Free to use. Developed by hiring professionals.</h6>
                         <p>Utilize our tool, which is free to use and was built by recruiting experts, to make sure your resume complies with requirements for success. 
 </p>
-                    </div>
+</div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <!-- Content -->
@@ -421,9 +457,7 @@
     <div class="col-md-6 col-lg-4 mb-4">
       <h6 class="mb-3 text-primary"> Is the Inxgo resume builder truly cost-free?</h6>
       <p>
-        <strong><u>Absolutely, yes!
-
-</u></strong>  Utilizing Inxgo's resume builder is completely free. Your professional resume is free to create, update, and download.
+        <strong><u>Absolutely, yes!</u></strong>  Utilizing Inxgo's resume builder is completely free. Your professional resume is free to create, update, and download.
       </p>
     </div>
 
@@ -438,7 +472,6 @@
 
     <div class="col-md-6 col-lg-4 mb-4">
       <h6 class="mb-3 text-primary">Can I alter the style and format of my resume?
-
       </h6>
       <p>
         Yes, you can customise a variety of Inxgo templates to fit your needs. The layout, colours, typeface, and style may all be readily customised to produce a resume that is distinctive and appealing.
@@ -446,19 +479,15 @@
     </div>
 
     <div class="col-md-6 col-lg-4 mb-4">
-      <h6 class="mb-3 text-primary">Are the templates and content endorsed by recruiters? 
-
+      <h6 class="mb-3 text-primary">Are the templates and content endorsed by recruiters?
       </h6>
-      <p>
-         <strong><u>Absolutely !
-
+<p>
+<strong><u>Absolutely!
 </u></strong> inxgo's Templates and content on are carefully chosen by hiring experts. Your chances of being seen by employers are increased by the fact that they are created to adhere to industry standards and have the endorsement of recruiters.
-      </p>
+</p>
     </div>
-
     <div class="col-md-6 col-lg-4 mb-4">
       <h6 class="mb-3 text-primary">Can I get my resume in other file formats to download?
-
       </h6>
       <p>Yes, you may download your resume from Inxgo in a variety of common file formats, including PDF, DOCX, and TXT. Pick a resume format that works for you so you can quickly share it with potential employers.
 </p>
@@ -484,7 +513,7 @@
 
                       <div class="text-center">
 
-                        <img src="{{ asset('img/mobail.png') }}" alt="inxgo app and free resume builder" width="400">
+                        <img src="{{ asset('img/mobile.webp') }}" alt="inxgo app and free resume builder" width="400">
                         
                       </div>
                     </div>

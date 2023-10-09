@@ -4570,3 +4570,40 @@ label{
 
         display: grid;
        }
+       .demo {
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.demo:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.demo .container {
+  position: relative;
+}
+
+.demo .container .row.justify-content-center {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+.demo .image-overlay:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.demo .image-overlay:hover:before {
+     background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
