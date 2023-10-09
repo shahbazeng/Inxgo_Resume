@@ -21,7 +21,6 @@
         <script src="{{ asset('js/plugins.js') }}" defer></script>
         <script src="{{ asset('js/popper.min.js') }}" defer></script>
         <script src="{{ asset('js/script.js') }}" defer></script>
-
         <!-- Fonts -->
         <link rel="dns-prefetch" href="//fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -58,7 +57,7 @@
                 <!-- Classy Menu -->
                 <nav class="classy-navbar justify-content-between" id="dreamNav">
                     <!-- Logo -->
-                    <a class="nav-brand" href="{{ url('/') }}"><img src="{{ url('img/core-img/logo.png') }}" alt="logo"></a>
+                    <a class="nav-brand" href="{{ url('/') }}"><img src="{{ url('img/core-img/logo.webp') }}" alt="inxgo free resume builder"></a>
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler"> <span class="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
