@@ -13,7 +13,9 @@ use Laravel\Socialite\Facades\Socialite;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+if(env('APP_ENV') == 'production'){
+    \URL::forceScheme('https');
+}
 Route::get('/admin', function () {
 	return view('admin.index');  
 });
