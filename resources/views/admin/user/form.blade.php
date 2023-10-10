@@ -28,11 +28,11 @@
                 @if(isset($data))
                    <input type="hidden" value="{{ isset($data->id)?$data->id:null }}" name="id" class="form-control">
                 @endif
-                <div class="mt-2 mx-4 col-md-5 d-inline-flex input-group input-group-outline mb-3 ">
+                <div class="mt-2 mx-4 col-md-5 d-inline-flex input-group input-group-outline mb-3 {{ isset($data->id)?'is-filled':'' }}">
                   <label class="form-label">Name</label>
                   <input type="text" value="{{ isset($data->name)?$data->name:null }}" name="name" class="form-control">
                 </div>
-                <div class="mt-2 mx-5 input-group input-group-outline mb-3 col-md-5 d-inline-flex">
+                <div class="mt-2 mx-5 input-group input-group-outline mb-3 col-md-5 d-inline-flex {{ isset($data->id)?'is-filled':'' }}">
                   <label class="form-label">Email</label>
                   <input type="email" name="email" value="{{ isset($data->email)?$data->email:null }}" class="form-control">
                 </div>
@@ -41,7 +41,7 @@
                   <input type="password" name="password" class="form-control">
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" name="is_admin" {{ (isset($data->is_admin) && $data->is_admin == 1 )? 'checked':null }}" value=1 type="checkbox" id="flexCheckDefault">
+                  <input class="form-check-input" name="is_admin" {{ (isset($data) && $data->is_admin == 1 )? 'checked':null }} value=1 type="checkbox" id="flexCheckDefault">
                   <label class="form-check-label" for="flexCheckDefault">
                     Is Admin
                   </label>

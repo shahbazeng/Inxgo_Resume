@@ -57,11 +57,7 @@
                 <!-- Classy Menu -->
                 <nav class="classy-navbar justify-content-between" id="dreamNav">
                     <!-- Logo -->
-<<<<<<< HEAD
-                    <a class="nav-brand" href="{{ url('/') }}"><img src="{{ url('img/core-img/logo.webp') }}" alt="inxgo free resume builder"></a>
-=======
-                    <a class="nav-brand" href="{{ url('/free-online-resume-builder') }}"><img src="{{ url('img/core-img/logo.png') }}" alt="logo"></a>
->>>>>>> f106aedc8b101e350c89c4ea291d219744db6695
+                    <a class="nav-brand" href="{{ url('/free-online-resume-builder') }}"><img src="{{ url('img/core-img/logo.webp') }}" alt="logo"></a>
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler"> <span class="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
@@ -115,11 +111,9 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    @if(Auth::user()->is_admin)
-                                     <a class="dropdown-item" href="{{ route('user') }}">
-                                        {{ __('user') }}
+                                     <a class="dropdown-item" href="{{ url('admin') }}">
+                                        {{ __('Panel') }}
                                     </a>
-                                    @endif
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();">

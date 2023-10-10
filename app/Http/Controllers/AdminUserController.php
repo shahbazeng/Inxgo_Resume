@@ -5,11 +5,25 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Session;
+use Auth;
+use Illuminate\Support\Facades\Hash;
 class AdminUserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
-    	$data=User::all();
+        $user=Auth::user()->is_admin;
+        if($user)
+        {
+    	   $data=User::all();
+        }
+        else
+        {
+            $data=User::where('id',Auth::user()->id)->get();
+        }
     	return view('admin.user.index')->with(['data'=>$data]);
     }
     public function create()
@@ -44,6 +58,15 @@ class AdminUserController extends Controller
     		{
     			unset($temp['password']);
     		}
+            else
+            {
+
+             $temp['password']=Hash::make($temp['password']);
+            }
+            if(!isset($temp['is_admin']))
+            {
+                $temp['is_admin']=0;
+            }
     		$data=User::where('id',$request->id)->update($temp);
     		Session::flash('message', 'User update added !');
     		return redirect()->back();
@@ -51,7 +74,16 @@ class AdminUserController extends Controller
     	}
     	else
     	{
-	    	User::create($request->all());
+            $temp=$request->all();
+            if(isset($temp['password']))
+            {
+                $temp['password']=Hash::make($temp['password']);
+            }
+            if(!isset($temp['is_admin']))
+            {
+                $temp['is_admin']=0;
+            }
+	    	User::create($temp);
     		Session::flash('message', 'User successfully added !'); 
     		return view('admin.user.form');
     	}

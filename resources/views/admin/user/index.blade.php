@@ -6,9 +6,11 @@
         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
           <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
             <h6 class="w-85 text-white text-capitalize ps-3 d-inline-block">User</h6>
-            <div class="text-right d-inline-block ">
-              <a type="button" href="{{ url('admin/user/create') }}" class="float-right btn btn-success">ADD</a>
-            </div>
+            @if(Auth::user()->is_admin)
+              <div class="text-right d-inline-block ">
+                <a type="button" href="{{ url('admin/user/create') }}" class="float-right btn btn-success">ADD</a>
+              </div>
+            @endif
           </div>
         </div>
         <div class="card-body px-0 pb-2">
