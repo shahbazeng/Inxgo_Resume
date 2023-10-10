@@ -27,78 +27,78 @@
 			<div class="section-heading text-center">
 				<div class="dream-dots justify-content-center"> <span></span><span></span><span></span><span></span><span></span><span></span><span></span> </div>
 				<h2 class="bold">Our Creative Templates</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+				<p>With our extensive selection of fashionable and expert templates for a standout resume, unleash your creativity.</p>
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="demo-item">
-						<a href="template-preview.html"><img src="img/demos/demo-1.png" alt="demo" class="img-responsive"></a>
+						<a href="template-preview.html"><img src="img/demos/demo-1.webp" alt="demo" class="img-responsive"></a>
 						<div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="demo-item">
-						<a href="template-preview.html"><img src="img/demos/demo-2.png" alt="demo" class="img-responsive"></a>
+						<a href="template-preview.html"><img src="img/demos/demo-2.webp" alt="demo" class="img-responsive"></a>
 						<div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="demo-item">
-						<a href="template-preview.html"><img src="img/demos/demo-3.png" alt="demo" class="img-responsive"></a>
+						<a href="template-preview.html"><img src="img/demos/demo-3.webp" alt="demo" class="img-responsive"></a>
 						<div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="demo-item">
-						<a href="template-preview.html"><img src="img/demos/demo-1.png" alt="demo" class="img-responsive"></a>
+						<a href="template-preview.html"><img src="img/demos/demo-1.webp" alt="demo" class="img-responsive"></a>
 						<div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="demo-item">
-						<a href="template-preview.html"><img src="img/demos/demo-2.png" alt="demo" class="img-responsive"></a>
+						<a href="template-preview.html"><img src="img/demos/demo-2.webp" alt="demo" class="img-responsive"></a>
 						<div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="demo-item">
-						<a href="template-preview.html"><img src="img/demos/demo-3.png" alt="demo" class="img-responsive"></a>
+						<a href="template-preview.html"><img src="img/demos/demo-3.webp" alt="demo" class="img-responsive"></a>
 						<div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="demo-item">
-						<a href="template-preview.html"><img src="img/demos/demo-1.png" alt="demo" class="img-responsive"></a>
+						<a href="template-preview.html"><img src="img/demos/demo-1.webp" alt="demo" class="img-responsive"></a>
 						<div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="demo-item">
-						<a href="template-preview.html"><img src="img/demos/demo-2.png" alt="demo" class="img-responsive"></a>
+						<a href="template-preview.html"><img src="img/demos/demo-2.webp" alt="demo" class="img-responsive"></a>
 						<div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="demo-item">
-						<a href="template-preview.html"><img src="img/demos/demo-3.png" alt="demo" class="img-responsive"></a>
+						<a href="template-preview.html"><img src="img/demos/demo-3.webp" alt="demo" class="img-responsive"></a>
 						<div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="demo-item">
-						<a href="template-preview.html"><img src="img/demos/demo-1.png" alt="demo" class="img-responsive"></a>
+						<a href="template-preview.html"><img src="public/img/demos/demo-1.webp" alt="demo" class="img-responsive"></a>
 						<div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="demo-item">
-						<a href="template-preview.html"><img src="img/demos/demo-2.png" alt="demo" class="img-responsive"></a>
+						<a href="template-preview.html"><img src="img/demos/demo-2.webp" alt="demo" class="img-responsive"></a>
 						<div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="demo-item">
-						<a href="template-preview.html"><img src="img/demos/demo-3.png" alt="demo" class="img-responsive"></a>
+						<a href="template-preview.html"><img src="img/demos/demo-3.webp" alt="demo" class="img-responsive"></a>
 						<div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div>
 					</div>
 				</div>
@@ -112,7 +112,7 @@
 				<!-- Dream Dots -->
 				<div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;"> <span></span><span></span><span></span><span></span><span></span><span></span><span></span> </div>
 				<h2 class="wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">Our Main Features</h2>
-				<p class="wow fadeInUp" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+				<p class="wow fadeInUp" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">Learn more about our key features, which include scalable templates, real-time editing, professional advice, and seamless integration.</p>
 			</div>
 			<div class="row">
 				<div class="col-12 col-sm-6 col-lg-4">
