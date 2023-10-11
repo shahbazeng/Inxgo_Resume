@@ -170,7 +170,7 @@
                         <div class="footer-copywrite-info">
                             <!-- Copywrite -->
                             <div class="copywrite_text fadeInUp" data-wow-delay="0.2s"> 
-                                <div class="footer-logo">
+                                <div class="footer-logo">s
                                     <a href="#"><img src="{{ asset('img/core-img/inxgo-logo.png') }}" alt="inxgo-logo"> </a>
                                 </div>
                                 <p>inxgo is a market leader in offering professional resume building services, enabling job searchers, and open doors to new career paths.</p>
