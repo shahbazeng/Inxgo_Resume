@@ -184,24 +184,6 @@
     </div>
 </section>
 
-<<<<<<< HEAD
-=======
-                   
-                        <a href="{{ url('free-online-resume-builder/resumes') }}"><img src="{{ asset('img/demos/demo-1.png') }}" alt="demo" class="img-responsive"></a>
-                     <!--   <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div> -->
-                   
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    
-                        <a href="{{ url('free-online-resume-builder/resumes') }}"><img src="{{ asset('img/demos/demo-2.png') }}" alt="demo" class="img-responsive"></a>
-                       <!--   <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div> -->
-                    </div>
-               
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    
-                        <a href="{{ url('free-online-resume-builder/resumes') }}"><img src="{{ asset('img/demos/demo-3.png') }}" alt="demo" class="img-responsive"></a>
-                        <!--   <div class="preview-btn-wrapper text-center"> <a href="template-preview.html" class="preview-demo">See template <i class="fa fa-long-arrow-right"></i></a> <a href="template-edit.html" class="preview-demo v2">Use template <i class="fa fa-long-arrow-right"></i></a> </div> --> 
->>>>>>> f106aedc8b101e350c89c4ea291d219744db6695
 
 
     <!-- ##### About Us Area Start ##### -->
