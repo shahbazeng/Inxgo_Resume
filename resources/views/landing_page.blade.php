@@ -98,7 +98,6 @@
                 <div class="col-12 col-lg-6 col-md-12"> 
                     <div class="welcome-content v2">
                         <div class="promo-section">
-<<<<<<< HEAD
                             <div class="integration-link light"> 
                             <span class="integration-icon">
  <img src="{{ asset('img/svg/img-dollar.svg') }}" width="24" height="24" alt="inxgo free cv resume builder"></span> 
@@ -109,17 +108,7 @@
                 <p class="lead">Use professional field-tested resume templates that follow the exact <br> ‘resume rules’ employers look for. Easy to use and done within <br> minutes - try now for free! </p>
                 <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s"> <a href="{{ route('home')}}" class="btn dream-btn green-btn mr-3">Get started for free </a>  <a href="{{ route('home')}}" class="btn dream-btn green-btn" style="background: #212529;border:2px solid #212529;"> No, I like to waste money and pay <b style="font-size:17px;">😆</b></a></div>
                 </div>
-=======
-                            <div class="integration-link light"> <span class="integration-icon">
-                                    <img src="{{ asset('img/svg/img-dollar.svg') }}" width="24" height="24" alt="inxgo cv resume builder">
-                                </span> <span class="integration-text">Build, download, or share Your CV | Resume 100 % Free!</span> </div>
-                        </div>
-                        <h1 class="wow fadeInUp" data-wow-delay="0.2s">Online Resume Builder With Creative Templates.</h1>
-                        <p class="lead">Use professional field-tested resume templates that follow the exact <br> ‘resume rules’ employers look for. Easy to use and done within <br> minutes - try now for free! </p>
-            
-                        <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s"> <a href="{{ url('free-online-resume-builder/home')}}" class="btn dream-btn green-btn mr-3">Get started for free </a>  <a href="{{ url('free-online-resume-builder/home')}}" class="btn dream-btn green-btn" style="background: #212529;border:2px solid #212529;"> No, I like to waste money and pay <b style="font-size:17px;">😆</b></a></div>
-                    </div>
->>>>>>> f106aedc8b101e350c89c4ea291d219744db6695
+
                 </div>
                 <div class="col-12 col-lg-6 col-md-12">
                     <div class="banner-box"> <img src="{{ asset('img/core-img/banner2.webp') }}" alt="inxgo free cv resume builder"> </div>
