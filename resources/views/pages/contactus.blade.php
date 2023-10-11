@@ -36,6 +36,9 @@
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-10 col-lg-8">
 				<div class="contact_form">
+				@if(Session::has('message'))
+                  <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+                @endif
 					<form action="{{route('contact_store')}}" method="post">
                         @csrf
 						<div class="row">

@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Contact;
+use Session;
 class HomeController extends Controller
 {
     /**
@@ -41,15 +42,18 @@ class HomeController extends Controller
     {
         $request->validate([
             'email' => 'required',
+            'name'=>'required',
             'subject' => 'required',
             'message' => 'required',
         ]);
+        Contact::create($request->all());
         $details = [
         'title' => $request->subject,
         'body' => $request->message,
         ];
-        \Mail::to($request->email)->send(new \App\Mail\MyMail($details));
-        return redirect('contact');
+        // \Mail::to($request->email)->send(new \App\Mail\MyMail($details));
+        Session::flash('message', 'Message successfully Send !'); 
+        return redirect()->back();
 
     }
 }

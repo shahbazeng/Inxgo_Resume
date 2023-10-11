@@ -13,12 +13,8 @@ use Laravel\Socialite\Facades\Socialite;
 | contains the "web" middleware group. Now create something great!
 |
 */
-if(env('APP_ENV') == 'production'){
-    \URL::forceScheme('https');
-}
-Route::get('/admin', function () {
-	return view('admin.index');  
-});
+
+Route::get('/admin','AdminUserController@adminHome'); 
 
 Route::get('/admin/table', function () {
 	return view('admin.table');  
@@ -40,6 +36,13 @@ Route::get('admin/user/create','AdminUserController@create');
 Route::post('admin/user/store','AdminUserController@store');
 Route::get('admin/user/delete/{id}','AdminUserController@delete');
 Route::get('admin/user/edit/{id}','AdminUserController@edit');
+
+//admin contact 
+Route::get('admin/contact','AdminContactController@index');
+Route::get('admin/contact/create','AdminContactController@create');
+Route::post('admin/contact/store','AdminContactController@store');
+Route::get('admin/contact/delete/{id}','AdminContactController@delete');
+Route::get('admin/contact/edit/{id}','AdminContactController@edit');
 
 
 //Route::resource('user','UserController');

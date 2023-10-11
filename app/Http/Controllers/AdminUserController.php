@@ -13,6 +13,10 @@ class AdminUserController extends Controller
     {
         $this->middleware('auth');
     }
+    public function adminHome()
+    {
+        return view('admin.index');
+    }
     public function index()
     {
         $user=Auth::user()->is_admin;
