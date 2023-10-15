@@ -20,8 +20,15 @@ class PdfController extends Controller
     {
         $this->middleware('auth');
     }
-    public function index(){
-        $usrId = Auth::user()->id;
+    public function index($id=null){
+        if($id)
+        {
+            $usrId = $id;
+        }
+        else
+        {
+            $usrId = Auth::user()->id;
+        }
         $data= array();
         $url=config('app.url');
         $data['url']=$url;
@@ -36,8 +43,15 @@ class PdfController extends Controller
         $data['references'] = References::where('user_id', $usrId)->get();
         return view('pdf.cv2',compact('data'));
     }
-    public function index2(){
-        $usrId = Auth::user()->id;
+   public function index2($id=null){
+        if($id)
+        {
+            $usrId = $id;
+        }
+        else
+        {
+            $usrId = Auth::user()->id;
+        }
         $data= array();
         $url=config('app.url');
         $data['url']=$url;
@@ -52,9 +66,15 @@ class PdfController extends Controller
         $data['references'] = References::where('user_id', $usrId)->get();
         return view('pdf.cv1',compact('data'));
     }
-    public function download2()
-    {
-        $usrId = Auth::user()->id;
+    public function download2($id=null){
+        if($id)
+        {
+            $usrId = $id;
+        }
+        else
+        {
+            $usrId = Auth::user()->id;
+        }
         $data= array();
         $data['flag']=1;
         $url=config('app.url');
@@ -74,8 +94,15 @@ class PdfController extends Controller
         return $pdf->stream('resume.pdf');
         // return $pdf->download('myresume.pdf');
     }
-    public function index3(){
-        $usrId = Auth::user()->id;
+    public function index3($id=null){
+        if($id)
+        {
+            $usrId = $id;
+        }
+        else
+        {
+            $usrId = Auth::user()->id;
+        }
         $data= array();
         $url=config('app.url');
         $data['url']=$url;
@@ -90,9 +117,15 @@ class PdfController extends Controller
         return view('pdf.index',compact('data'));
     }
 
-    public function download3()
-    {
-        $usrId = Auth::user()->id;
+    public function download3($id=null){
+        if($id)
+        {
+            $usrId = $id;
+        }
+        else
+        {
+            $usrId = Auth::user()->id;
+        }
         $data= array();
         $data['flag']=1;
         $url=config('app.url');
@@ -112,9 +145,15 @@ class PdfController extends Controller
     }
 
 
-    public function download()
-    {
-        $usrId = Auth::user()->id;
+    public function download($id=null){
+        if($id)
+        {
+            $usrId = $id;
+        }
+        else
+        {
+            $usrId = Auth::user()->id;
+        }
         $data= array();
 
         $data['basicInfo'] = basicInfo::where('user_id', $usrId)->first();

@@ -13,6 +13,11 @@ use Laravel\Socialite\Facades\Socialite;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// \URL::forceScheme('https');
+
+if(env('APP_ENV') == 'production'){
+    \URL::forceScheme('https');
+}
 
 Route::get('/admin','AdminUserController@adminHome'); 
 
@@ -36,6 +41,12 @@ Route::get('admin/user/create','AdminUserController@create');
 Route::post('admin/user/store','AdminUserController@store');
 Route::get('admin/user/delete/{id}','AdminUserController@delete');
 Route::get('admin/user/edit/{id}','AdminUserController@edit');
+//admin user 
+Route::get('admin/cv','AdminCVController@index');
+Route::get('admin/cv/create','AdminCVController@create');
+Route::post('admin/cv/store','AdminCVController@store');
+Route::get('admin/cv/delete/{id}','AdminCVController@delete');
+Route::get('admin/cv/edit/{id}','AdminCVController@edit');
 
 //admin contact 
 Route::get('admin/contact','AdminContactController@index');
@@ -123,12 +134,12 @@ Route::get('/ca_update/{id}','CareerObjectController@edit')->name('edit');
 Route::post('/ca_update/{id}','CareerObjectController@update')->name('update');
 
 //PDF
-Route::get('pdf_display','PdfController@index')->name('pdf_index');
-Route::get('pdf_display2','PdfController@index2')->name('pdf_index2');
-Route::get('pdf_download2','PdfController@download2')->name('download2');
-Route::get('pdf_display3','PdfController@index3')->name('pdf_index3');
-Route::get('pdf_download3','PdfController@download3')->name('download3');
-Route::get('pdf_download','PdfController@download')->name('download');
+Route::get('pdf_display/{id?}','PdfController@index')->name('pdf_index');
+Route::get('pdf_display2/{id?}','PdfController@index2')->name('pdf_index2');
+Route::get('pdf_download2/{id?}','PdfController@download2')->name('download2');
+Route::get('pdf_display3/{id?}','PdfController@index3')->name('pdf_index3');
+Route::get('pdf_download3/{id?}','PdfController@download3')->name('download3');
+Route::get('pdf_download/{id?}','PdfController@download')->name('download');
 
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);

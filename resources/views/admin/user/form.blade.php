@@ -40,12 +40,14 @@
                   <label class="form-label">Password</label>
                   <input type="password" name="password" class="form-control">
                 </div>
+                @if(Auth::user()->is_admin)
                 <div class="form-check">
                   <input class="form-check-input" name="is_admin" {{ (isset($data) && $data->is_admin == 1 )? 'checked':null }} value=1 type="checkbox" id="flexCheckDefault">
                   <label class="form-check-label" for="flexCheckDefault">
                     Is Admin
                   </label>
                 </div>
+                @endif
                 <div class="text-end">
                   <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-14 mt-4 mb-0">Submit</button>
                 </div>
