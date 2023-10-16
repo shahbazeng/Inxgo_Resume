@@ -74,6 +74,11 @@
                                     <a href="{{url('pdf_display3')}}" class="btn btn-primary btn-block">Preview Your Resume 3</a>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>
+                                    <a href="{{url('pdf_display4')}}" class="btn btn-primary btn-block">Preview Your Resume 4</a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

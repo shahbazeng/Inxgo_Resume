@@ -13,9 +13,8 @@ use Laravel\Socialite\Facades\Socialite;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// \URL::forceScheme('https');
-
-if(env('APP_ENV') == 'production'){
+\URL::forceScheme('https');
+if(config('app.env') == 'production'){
     \URL::forceScheme('https');
 }
 
@@ -140,6 +139,9 @@ Route::get('pdf_download2/{id?}','PdfController@download2')->name('download2');
 Route::get('pdf_display3/{id?}','PdfController@index3')->name('pdf_index3');
 Route::get('pdf_download3/{id?}','PdfController@download3')->name('download3');
 Route::get('pdf_download/{id?}','PdfController@download')->name('download');
+Route::get('pdf_display4/{id?}','PdfController@index4')->name('pdf_index4');
+Route::get('pdf_download4/{id?}','PdfController@download4')->name('download4');
+
 
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);

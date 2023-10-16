@@ -116,6 +116,28 @@ class PdfController extends Controller
         $data['references'] = References::where('user_id', $usrId)->get();
         return view('pdf.index',compact('data'));
     }
+    public function index4($id=null){
+        if($id)
+        {
+            $usrId = $id;
+        }
+        else
+        {
+            $usrId = Auth::user()->id;
+        }
+        $data= array();
+        $url=config('app.url');
+        $data['url']=$url;
+        $data['basicInfo'] = basicInfo::where('user_id', $usrId)->first();
+        $data['objective'] = CareerObject::where('user_id', $usrId)->first();
+        $data['educations'] = Education::where('user_id', $usrId)->get();
+        $data['works'] = Work::where('user_id', $usrId)->get();
+        $data['cetificates'] = Certificate::where('user_id', $usrId)->get();
+        $data['skill'] = Skill::where('user_id', $usrId)->get();
+        $data['expert'] = Expert::where('user_id', $usrId)->get();
+        $data['references'] = References::where('user_id', $usrId)->get();
+        return view('pdf.cv4',compact('data'));
+    }
 
     public function download3($id=null){
         if($id)
