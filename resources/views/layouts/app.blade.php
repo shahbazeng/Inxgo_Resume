@@ -58,7 +58,7 @@
                 <!-- Classy Menu -->
                 <nav class="classy-navbar justify-content-between" id="dreamNav">
                     <!-- Logo -->
-                    <a class="nav-brand" href="{{ url('/free-online-resume-builder') }}"><img src="{{ url('img/core-img/logo.webp') }}" alt="logo"></a>
+                    <a class="nav-brand" href="{{ url('/free-online-resume-builder') }}"><img src="{{ url('img/core-img/logo.webp') }}" alt="inxgo-logo"></a>
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler"> <span class="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
