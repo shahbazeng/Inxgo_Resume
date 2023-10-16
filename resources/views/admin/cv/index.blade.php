@@ -20,6 +20,7 @@
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">CV 1</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">CV 2</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">CV 3</th>
+                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">CV 4</th>
                   <th class="text-secondary opacity-7"></th>
                 </tr>
               </thead>
@@ -55,6 +56,15 @@
                     <td class="align-middle text-center text-sm">
                       @if(isset($value->education[0]->id))
                       <a href="{{ url('pdf_display3/'.$value->id) }}"class="btn btn-success font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Delete user">
+                        Preview CV
+                      </a>
+                      @else
+                        -
+                      @endif
+                    </td>
+                     <td class="align-middle text-center text-sm">
+                      @if(isset($value->education[0]->id))
+                      <a href="{{ url('pdf_display4/'.$value->id) }}"class="btn btn-success font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Delete user">
                         Preview CV
                       </a>
                       @else
