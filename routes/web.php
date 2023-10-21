@@ -13,7 +13,7 @@ use Laravel\Socialite\Facades\Socialite;
 | contains the "web" middleware group. Now create something great!
 |
 */
-\URL::forceScheme('https');
+// \URL::forceScheme('https');
 if(config('app.env') == 'production'){
     \URL::forceScheme('https');
 }

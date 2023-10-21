@@ -165,6 +165,32 @@ class PdfController extends Controller
         $pdf = PDF::loadView('pdf.cv2',compact('data'));
         return $pdf->stream('resume.pdf');
     }
+    public function download4($id=null){
+        if($id)
+        {
+            $usrId = $id;
+        }
+        else
+        {
+            $usrId = Auth::user()->id;
+        }
+        $data= array();
+        $data['flag']=1;
+        $url=config('app.url');
+        $data['url']=$url;
+        $data['basicInfo'] = basicInfo::where('user_id', $usrId)->first();
+        $data['objective'] = CareerObject::where('user_id', $usrId)->first();
+        $data['educations'] = Education::where('user_id', $usrId)->get();
+        $data['works'] = Work::where('user_id', $usrId)->get();
+        $data['cetificates'] = Certificate::where('user_id', $usrId)->get();
+        $data['skill'] = Skill::where('user_id', $usrId)->get();
+        $data['expert'] = Expert::where('user_id', $usrId)->get();
+        $data['references'] = References::where('user_id', $usrId)->get();
+        $data['url']=$url;
+         $data['flag']=1;
+        $pdf = PDF::loadView('pdf.cv4',compact('data'));
+        return $pdf->stream('resume.pdf');
+    }
 
 
     public function download($id=null){

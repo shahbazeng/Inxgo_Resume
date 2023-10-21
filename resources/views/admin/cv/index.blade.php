@@ -40,6 +40,10 @@
                         <a href="{{ url('pdf_display/'.$value->id) }}"class="btn btn-success font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Delete user">
                           Preview CV
                         </a>
+                        <br>
+                        <textarea id="cv2{{$value->id }}">{{url('pdf_download/'.$value->id) }}</textarea>
+                         <br>
+                        <button class-key="cv2{{$value->id }}" class="btn btn-warning font-weight-bold text-xs" type="button">Copy Url</button>
                       @else
                         -
                       @endif
@@ -49,6 +53,10 @@
                       <a href="{{ url('pdf_display2/'.$value->id) }}"class="btn btn-success font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Delete user">
                         Preview CV
                       </a>
+                      <br>
+                        <textarea id="cv3{{$value->id }}">{{url('pdf_download2/'.$value->id) }}</textarea>
+                         <br>
+                        <button class-key="cv3{{$value->id }}" class="btn btn-warning font-weight-bold text-xs" type="button">Copy Url</button>
                       @else
                         -
                       @endif
@@ -58,6 +66,10 @@
                       <a href="{{ url('pdf_display3/'.$value->id) }}"class="btn btn-success font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Delete user">
                         Preview CV
                       </a>
+                      <br>
+                        <textarea id="cv4{{$value->id }}">{{url('pdf_download3/'.$value->id) }}</textarea>
+                         <br>
+                        <button class-key="cv4{{$value->id }}" class="btn btn-warning font-weight-bold text-xs" type="button">Copy Url</button>
                       @else
                         -
                       @endif
@@ -67,6 +79,10 @@
                       <a href="{{ url('pdf_display4/'.$value->id) }}"class="btn btn-success font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Delete user">
                         Preview CV
                       </a>
+                      <br>
+                        <textarea id="cv1{{$value->id }}">{{url('pdf_download4/'.$value->id) }}</textarea>
+                         <br>
+                        <button class-key="cv1{{$value->id }}" class="btn btn-warning font-weight-bold text-xs" type="button">Copy Url</button>
                       @else
                         -
                       @endif
