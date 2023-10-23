@@ -159,7 +159,7 @@ p
 <body>
   @if(!isset($data['flag']) )
   <div class="row col-6 text-right">
-    <a href="{{ url('pdf_download4')}}" style="float: right" class="btn btn-primary" onclick="return confirm('Are you Sure ?')">Download</a>
+    <a href="{{url('pdf_download4/'.$data['basicInfo']->user_id)}}" style="float: right" class="btn btn-primary" onclick="return confirm('Are you Sure ?')">Download</a>
   </div>
    @endif
    @if(isset($data['flag']) && $data['flag'])

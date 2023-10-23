@@ -131,7 +131,7 @@
       <div class="rela-block page">
         @if($data['flag'] == 0)
         <div class="row col-12 text-right">
-          <a href="{{ url('pdf_download2')}}" style="float: right" class="btn btn-primary" onclick="return confirm('Are you Sure ?')">Download</a>
+          <a href="{{ url('pdf_download3/'.$data['basicInfo']->user_id)}}" style="float: right" class="btn btn-primary" onclick="return confirm('Are you Sure ?')">Download</a>
         </div>
         @endif
          @if($data['flag'] == 1)

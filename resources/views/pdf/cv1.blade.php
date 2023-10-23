@@ -97,7 +97,7 @@
     <div class="col-6 text-right" style="display: flex;
           width: 850px;
           justify-content: space-between;
-          margin: 20px auto;"> <a href="{{ url('pdf_download')}}" class="btn btn-primary" onclick="return confirm('Are you Sure ?')">Download</a> </div> @endif
+          margin: 20px auto;"> <a href="{{ url('pdf_download2/'.$data['basicInfo']->user_id)}}" class="btn btn-primary" onclick="return confirm('Are you Sure ?')">Download</a> </div> @endif
     <div class="container" style=" display: flex;
           width: 850px;
           background-color: #eedfda;

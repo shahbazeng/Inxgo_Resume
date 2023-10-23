@@ -139,7 +139,7 @@
                         <a href="{{route('main_index')}}" class="btn btn-warning">Back</a>
                     </div>
                     <div class="col-6 text-right">
-                        <a href="{{ url('pdf_download')}}" class="btn btn-primary" onclick="return confirm('Are you Sure ?')">Download</a>
+                        <a href="{{ url('pdf_download/'.$data['basicInfo']->user_id)}}" class="btn btn-primary" onclick="return confirm('Are you Sure ?')">Download</a>
                     </div>
                 </div>
             </div> <!-- main-content -->
