@@ -196,7 +196,15 @@ p
     @endif
      <div class="profile-image" style="
          margin-left: 18px;width: 198px;height: 220px;background-color: #fff;border-radius: 30px;">
-      <img style=" width: 100%;height: 100%;object-fit: cover;" src="{{  $data['url'] .'resume/cv1/assets/images/Happy-Man.png' }}">
+      
+
+      @if($data['basicInfo']->image)
+          <img style=" width: 100%;height: 100%;object-fit: cover;" src="{{asset('images/').'/'.$data['basicInfo']->image}}">
+            @else
+               <img style=" width: 100%;height: 100%;object-fit: cover;" src="{{  $data['url'] .'resume/cv1/assets/images/Happy-Man.png' }}">
+            @endif
+
+
     </div>
     <div class="about-section" style="">
       <h2>About</h2>

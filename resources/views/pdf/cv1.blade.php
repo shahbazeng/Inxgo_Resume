@@ -151,9 +151,16 @@
             padding-left: 30px;
             padding-right: 30px;
             padding-top: 50px;
-            padding-bottom: 70px;margin-top: 70px;"> <img class="avatar" style=" width: 200px;
-            height: 200px;
-            background-color: White;" src="{{  $data['url'] .'resume/cv1/assets/images/Happy-Man.png' }}">
+            padding-bottom: 70px;margin-top: 70px;">
+
+            @if($data['basicInfo']->image)
+              <img class="avatar" style=" width: 200px;height: 200px;background-color: White;" src="{{asset('images/').'/'.$data['basicInfo']->image}}">
+            @else
+                <img class="avatar" style=" width: 200px;height: 200px;background-color: White;" src="{{  $data['url'] .'resume/cv1/assets/images/Happy-Man.png' }}">
+            @endif
+
+
+            
           <div class="about">
             <h1 class="name">{{$data['basicInfo']->first_name }}{{" " .$data['basicInfo']->last_name }}</h1> <span class="position">{{$data['basicInfo']->profession }}</span> </div>
           <div class="contacts">

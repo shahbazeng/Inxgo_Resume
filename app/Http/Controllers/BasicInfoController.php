@@ -71,6 +71,8 @@ class BasicInfoController extends Controller
             'phone.integer' =>"Enter valid Phone Number",
         ]);
         
+        $imageName = time().'.'.$request->image->extension();  
+        $request->image->move(public_path('images'), $imageName);
         $bInfo = new basicInfo;
         
         $bInfo->first_name = $request->first_name;
@@ -82,6 +84,7 @@ class BasicInfoController extends Controller
         $bInfo->post_code = $request->post_code;
         $bInfo->phone = $request->phone;
         $bInfo->email = $request->email;
+        $bInfo->image = $imageName;
         $user=User::where('email',$request->email)->first();
         if(!$user)
         {  

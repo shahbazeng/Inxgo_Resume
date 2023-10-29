@@ -44,7 +44,7 @@
 
                     <h3 class="text-info">Tell Us About Yourself</h3>
 
-                    <form action="{{route('store')}}" method="post">
+                    <form action="{{route('store')}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <div class="row">
@@ -59,6 +59,17 @@
                                     <label for="">Last Name : </label>
                                     <input type="text" class="form-control @error('last_name') is-invalid @enderror" name="last_name" placeholder="Enter Last Name" value="{{ old('last_name') }}">
                                     @error('last_name')
+                                    <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="">Image : </label>
+                                    <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" placeholder="Enter Image" value="{{ old('image') }}">
+                                    @error('image')
                                     <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
