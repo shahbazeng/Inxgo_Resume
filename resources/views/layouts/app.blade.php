@@ -210,7 +210,7 @@
                 </div>
                 @endif
                 @if(session('delete'))
-                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <div class="alert alert-danger alert-dismissible fade show " style="margin-top: 7%;" role="alert">
                     <strong>{{ session('delete') }}</strong>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>

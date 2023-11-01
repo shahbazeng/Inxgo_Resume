@@ -48,7 +48,7 @@ class EducationController extends Controller
             'degree' => ['required', 'max:255','string'],
             'institute' => ['required', 'max:255'],
             'year' => ['required', 'integer'],
-            'year_end' => ['required', 'integer'],
+            'year_end' => ['required'],
         ],[
             'degree.required' =>"Field Must not be empty",
             'institute.string' =>"Name Should be a String",

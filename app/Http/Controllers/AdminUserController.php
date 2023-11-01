@@ -71,6 +71,12 @@ class AdminUserController extends Controller
             {
                 $temp['is_admin']=0;
             }
+            if(isset($request->image))
+            {
+                // $imageName = time().'.'.$request->image->extension();  
+                // $request->image->move(public_path('images'), $imageName);
+                // $temp['image'] = $imageName;
+            }
     		$data=User::where('id',$request->id)->update($temp);
     		Session::flash('message', 'User update added !');
     		return redirect()->back();
@@ -79,6 +85,12 @@ class AdminUserController extends Controller
     	else
     	{
             $temp=$request->all();
+            if(isset($request->image))
+            {
+                // $imageName = time().'.'.$request->image->extension();  
+                // $request->image->move(public_path('images'), $imageName);
+                // $temp['image'] = $imageName;
+            }
             if(isset($temp['password']))
             {
                 $temp['password']=Hash::make($temp['password']);

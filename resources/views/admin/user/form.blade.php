@@ -10,7 +10,7 @@
         </div>
         <div class="card-body px-0 pb-2">
           <div class="table-responsive p-0">
-            <form role="form" method="post" action="{{ url('admin/user/store') }}">
+            <form role="form" method="post" action="{{ url('admin/user/store') }}" enctype="multipart/form-data">
               @csrf
               <div class="container-fluid">
                 @if(Session::has('message'))
@@ -40,6 +40,10 @@
                   <label class="form-label">Password</label>
                   <input type="password" name="password" class="form-control">
                 </div>
+               {{--  <div class="mt-2 mx-5 input-group input-group-outline mb-3 col-md-5 d-inline-flex is-filled">
+                  <label class="form-label">image</label>
+                  <input type="file" name="image" class="form-control">
+                </div> --}}
                 @if(Auth::user()->is_admin)
                 <div class="form-check">
                   <input class="form-check-input" name="is_admin" {{ (isset($data) && $data->is_admin == 1 )? 'checked':null }} value=1 type="checkbox" id="flexCheckDefault">
