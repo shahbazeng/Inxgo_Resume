@@ -70,9 +70,12 @@ class BasicInfoController extends Controller
             'phone.required' =>"Field Must not be empty",
             'phone.integer' =>"Enter valid Phone Number",
         ]);
-        
-        $imageName = time().'.'.$request->image->extension();  
-        $request->image->move(public_path('images'), $imageName);
+        $imageName=null;
+        if(isset($request->image))
+        {
+            $imageName = time().'.'.$request->image->extension();  
+            $request->image->move(public_path('images'), $imageName);
+        }
         $bInfo = new basicInfo;
         
         $bInfo->first_name = $request->first_name;
