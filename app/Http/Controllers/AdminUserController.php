@@ -15,7 +15,8 @@ class AdminUserController extends Controller
     }
     public function adminHome()
     {
-        return view('admin.index');
+        $data=User::with('education')->where('id',Auth::user()->id)->get();
+        return view('admin.index')->with(['data'=>$data]);
     }
     public function index()
     {

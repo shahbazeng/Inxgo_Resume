@@ -4,7 +4,7 @@
           <ul class="navbar-nav  justify-content-end">
             <li class="nav-item d-flex align-items-center float-right">
               <a href="../pages/sign-in.html" class="nav-link text-body font-weight-bold px-0">
-                <i class="fa fa-user me-sm-1"></i>
+                <i class="fa fa-user me-sm-1" style="    font-size: 14px;"></i>
                 <span class="d-sm-inline d-none">
 
                 <a class="dropdown-item" href="{{ route('logout') }}"
