@@ -73,6 +73,15 @@
                                     <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
+                                <div class="col-md-6">
+                                    <label for="">Resume Type : </label>
+                                    <select class="form-control" aria-label="Default select example" name="resume_type">
+                                      <option value="All Templates">All Templates</option>
+                                      <option value="Modern">Modern</option>
+                                      <option value="Tradidtional ">Tradidtional </option>
+                                      <option value="Simple 5- Creative ">Simple 5- Creative </option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">

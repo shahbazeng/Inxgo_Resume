@@ -88,6 +88,10 @@ class BasicInfoController extends Controller
         $bInfo->phone = $request->phone;
         $bInfo->email = $request->email;
         $bInfo->image = $imageName;
+        if(isset($request->resume_type))
+        {
+            $bInfo->resume_type = $request->resume_type;
+        }
         $user=User::where('email',$request->email)->first();
         if(!$user)
         {  
