@@ -69,9 +69,11 @@
                          <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
                                 <div class="form-check">
-                                           <a href="{{ url('auth/google') }}">
+                                           <a href="{{ url('/login/google') }}">
                     <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png" style="margin-left: 4em; margin-top: 10px;">
                 </a>
+                
+
                                 </div>
                             </div>
                         </div>

@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GoogleController;
 use Laravel\Socialite\Facades\Socialite;
+use App\Http\Controllers\Auth\SocialController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -143,8 +145,10 @@ Route::get('pdf_display4/{id?}','PdfController@index4')->name('pdf_index4');
 Route::get('pdf_download4/{id?}','PdfController@download4')->name('download4');
 
 
-Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
-Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
+
+Route::get('/login/google', [SocialController::class, 'redirectToGoogle']);
+Route::get('/login/google/callback', [SocialController::class, 'handleGoogleCallback']);
+
 
 Route::get('migrate', function () {
      \Artisan::call('migrate');

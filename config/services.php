@@ -14,9 +14,9 @@ return [
     |
     */
       'google' => [
-        'client_id' => '200125175101-742439nm7orqbissevpsd3ht1ukqr4il.apps.googleusercontent.com',
-        'client_secret' => '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',
-        'redirect' => 'http://127.0.0.1:8000/auth/google/callback',
+        'client_id' => '1030562935309-m3s266gibf0n5efut1ej9ohsomkg3t7l.apps.googleusercontent.com',
+        'client_secret' => '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',
+        'redirect' => 'http://127.0.0.1:8000/login/google/callback',
     ],
 
     'mailgun' => [
