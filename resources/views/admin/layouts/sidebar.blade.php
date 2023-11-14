@@ -43,6 +43,16 @@
           <span class="nav-link-text ms-1"  style="font-size: 15px !important;">CV</span>
         </a>
       </li>
+      @if(Auth::user()->is_admin)
+       <li class="nav-item">
+        <a class="nav-link text-white "href="{{ url('articles') }}">
+          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="material-icons opacity-10">table_view</i>
+          </div>
+          <span class="nav-link-text ms-1"  style="font-size: 15px !important;">Articles</span>
+        </a>
+      </li>
+         @endif
     </ul>
   </div>
 </aside>

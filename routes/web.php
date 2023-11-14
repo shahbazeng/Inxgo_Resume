@@ -42,7 +42,7 @@ Route::get('admin/user/create','AdminUserController@create');
 Route::post('admin/user/store','AdminUserController@store');
 Route::get('admin/user/delete/{id}','AdminUserController@delete');
 Route::get('admin/user/edit/{id}','AdminUserController@edit');
-//admin user 
+//admin CV 
 Route::get('admin/cv','AdminCVController@index');
 Route::get('admin/cv/create','AdminCVController@create');
 Route::post('admin/cv/store','AdminCVController@store');
@@ -143,6 +143,13 @@ Route::get('pdf_download3/{id?}','PdfController@download3')->name('download3');
 Route::get('pdf_download/{id?}','PdfController@download')->name('download');
 Route::get('pdf_display4/{id?}','PdfController@index4')->name('pdf_index4');
 Route::get('pdf_download4/{id?}','PdfController@download4')->name('download4');
+
+// routes/web.php
+
+
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::resource('articles', ArticleController::class);
+});
 
 
 
