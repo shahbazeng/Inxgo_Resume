@@ -16,7 +16,7 @@ return [
       'google' => [
         'client_id' => '1030562935309-m3s266gibf0n5efut1ej9ohsomkg3t7l.apps.googleusercontent.com',
         'client_secret' => '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',
-        'redirect' => 'http://127.0.0.1:8000/login/google/callback',
+        'redirect' => 'https://www.inxgo.com/login/google/callback',
     ],
 
     'mailgun' => [
