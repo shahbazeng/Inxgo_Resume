@@ -10,7 +10,7 @@ class AdminMiddleware
 public function handle(Request $request, Closure $next)
 {
     if (auth()->check()) {
-        if (auth()->user()->isAdmin()) {
+        if (auth()->user()->is_admin) {
             return $next($request);
         } else {
             dd('User is not an admin.'); // Debug statement
