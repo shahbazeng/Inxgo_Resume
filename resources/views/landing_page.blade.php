@@ -518,12 +518,12 @@
         <div class="footer-content-area spec">
             <div class="container">
                 <div class="row ">
-                    <div class="col-12 col-lg-4 col-md-6">
+                    <div class="col-12 col-lg-4 col-md-6"> 
                         <div class="footer-copywrite-info">
                             <!-- Copywrite -->
                             <div class="copywrite_text fadeInUp" data-wow-delay="0.2s"> 
                                 <div class="footer-logo">
-                                    <a href="#"><img src="img/core-img/inxgo logo.png" alt="logo"> </a>
+                                    <a href="#"><img src="{{ url('img/core-img/inxgo-logo.png') }}" alt="logo"> </a>
                                 </div>
                                 <p>inxgo is a market leader in offering professional resume building services, enabling job searchers, and open doors to new career paths.</p>
                             </div>
